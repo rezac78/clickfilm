@@ -1,0 +1,227 @@
+.fullpart{
+        display: flex;
+}
+.partone{
+        background-color: #20242C;
+}
+.collection{
+        cursor: pointer;
+}
+.collection img{
+        width: 100%;
+}
+.textCollection span{
+        color: #00D4AD;
+        font-size: 1.2rem;
+}
+.text-one{
+        cursor: pointer;
+}
+.text-one a{
+        text-decoration: none;
+}
+.fil{
+        color: red;
+        font-size: 1.1rem;
+        padding: 10px 5px;
+}
+.poster-film img{
+        width: 32%;
+        height: 25vh;
+        padding: 5px 5px;
+        cursor: pointer;
+}
+.poster-film img:hover{
+        opacity: 0.7;
+}
+.submit-one{
+        border: 2px solid #173D41;
+        background-color: #173D41;
+        cursor: pointer;
+        height: 5vh;
+}
+.submit-one a{
+        text-decoration: none;
+}
+.partserial img{
+        width: 100%;
+}
+.partserial img:hover{
+        filter: contrast(150%);
+}
+.serialpart{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+}
+.serialpart a{
+        color: #00D4AD;
+        font-size: 0.85rem;
+        text-decoration: none;
+}
+.trailer img{
+        width: 100%;
+}
+.trailer img:hover{
+        filter: contrast(150%);
+}
+.serialpart2{
+        position: relative;
+        top: -1.5pc;
+        display: flex;
+        justify-content: space-between;
+        color: #00D4AD;
+        font-size: 0.85rem;
+        cursor: pointer;
+}
+.list ul li span{
+        color: #00D4AD;
+}
+.list ul li a{
+        text-decoration: none;
+}
+.list ul li{
+        font-size: 1rem;
+}
+.class{
+        margin: 0 1%;
+        background-color: #111111;
+}
+/* part 2 start */
+.postrs span{
+        font-size: 1.2rem;
+        color: #04EEC8;
+        border: 2px solid #111111;
+        background-color: #111111d8;
+}
+.postrs img{
+        height: 70vh;
+}
+.user-info{
+        background-color: #282C33;
+        color: #04EEC8;
+        height: 20vh;
+        padding: 20px 10px;
+        width: 100%;
+}
+.img-name{
+        display: flex;
+        justify-content: space-between;
+}
+.details{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 15px;
+}
+.listdata{
+        border: 1px solid black;
+        padding: 15px 15px;
+        
+}
+.listdata input{
+        background-color: #282C33;
+        border: none;
+        outline: none;
+}
+.details input{
+        border-radius: 45px;
+        background-color: #20242C;
+        color: #04EEC8;
+        margin-top: 7px;
+        text-align: center;
+        outline: none;
+}
+.reza{
+        display: flex;
+        justify-content: space-between;
+} 
+.heade-img img{
+        width: 50%;
+        
+}
+.sesion1{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+}
+.s1 span{
+        color: white;
+        font-weight: 700;
+        font-size: 1.07rem;
+}
+.s2{
+        display: flex;
+}
+.imdb span{
+        background-color: #464232;
+        border: 0.5px solid #404040;
+        padding: 5px 5px;
+        font-weight:bold;
+        border-radius: 10%;
+}
+.s2 .star{
+        padding: 0px 8px;
+}
+.s2 .star i{
+        color: #F5C518;
+}
+.s2 .star span{
+        color: #00D4AD;
+        padding: 0px 4px;
+        font-size: 1.2rem;
+}
+.s2 .star small{
+        color: white;
+}
+.imdb span:hover{
+        cursor: pointer;
+        background-color: #F3C74D;
+        transition: 0.6s;
+}
+.d img:hover{
+        box-shadow: 4px 4px 30px #00D4AD;
+}
+.sesion2{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+}
+.se1 i{
+        color: #00D4AD;
+        padding-left: 3px;
+}
+.mton{
+        color: #00D4AD;
+}
+.mton2{
+        font-size: 0.9rem;
+        font-weight: 700;
+}
+.mton2 big{
+        font-size: 0.9rem;
+        color: #777777;
+}
+.se2 span{
+        font-size: 0.8rem;
+        font-weight: 800;
+}
+.mton3{
+        font-size: 0.8rem;
+        color: #777777;
+}
+.ses2{
+        display: flex;
+}
+.ses3 p{
+        width: 90%;
+}
+.ses4{
+        text-align: center;
+}
+.sesion3{
+        color: white;
+}
+.mton4{
+        font-size: 0.9rem;
+        font-weight: 700;
+}
