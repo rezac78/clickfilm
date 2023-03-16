@@ -4,6 +4,7 @@
 .partone{
         background-color: #20242C;
 }
+
 .collection{
         cursor: pointer;
 }
@@ -84,7 +85,7 @@
         font-size: 1rem;
 }
 .class{
-        margin: 0 1%;
+        padding: 0 1%;
         background-color: #111111;
 }
 /* part 2 start */

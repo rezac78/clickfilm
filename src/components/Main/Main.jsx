@@ -13,7 +13,7 @@ export default function Main() {
                 <>
                         <section>
                                 <div className="class">
-                                        <main style={{ "backgroundColor": "#111111;" }} className="fullpart">
+                                        <main  className="fullpart">
                                                 <div className="row">
                                                         <div className="col-lg-4 col-md-12">
                                                                 <div className="container">
