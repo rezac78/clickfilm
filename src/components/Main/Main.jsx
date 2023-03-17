@@ -7,8 +7,7 @@ import Grouping from '../Left/Grouping/Grouping';
 import SliderShow from '../Right/SliderShow/Slider';
 import Search from '../Right/Search/Search';
 import Film from '../Right/Film/Film';
-import Image from 'next/image'
-import Link from 'next/link'
+import { FilmValues } from "../../events/events"
 export default function Main() {
         return (
                 <>
@@ -33,7 +32,11 @@ export default function Main() {
                                                                 <section className="">
                                                                         <SliderShow />
                                                                         <Search />
-                                                                        <Film />
+                                                                        {
+                                                                                FilmValues.map((e) => {
+                                                                                        return <Film key={e.id} img={e.image} name={e.name} score={e.score} type={e.type} Quality={e.Quality} ProductCountry={e.ProductCountry} Director={e.Director} Actors={e.Actors} summary={e.summary} score2={e.score2} />
+                                                                                })
+                                                                        }
                                                                         {/* <SerialPart/> */}
                                                                 </section>
                                                         </div>

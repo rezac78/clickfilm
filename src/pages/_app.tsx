@@ -4,6 +4,7 @@ import Head from "next/head";
 import Script from "next/script";
 import "../components/Header/header.css";
 import "../styles/Netflex.css";
+import "../styles/globals.css";
 import "../styles/Film.css";
 import "../components/Footer/Footer.css";
 import "../styles/download.css";
@@ -24,7 +25,8 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossOrigin="anonymous"
         />
-        <title>RezaDalvand</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+        <title>Click Film</title>
       </Head>
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Right/Serial/Serial.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Right/Serial/Serial.jsx", "src/pages/Download.jsx"],
   "exclude": ["node_modules"]
 }

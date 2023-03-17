@@ -136,93 +136,79 @@
         display: flex;
         justify-content: space-between;
 } 
-.heade-img img{
-        width: 50%;
-        
+/* START Card Film */
+.Film-section{
+        color:white;
+        display: flex;
+        direction: rtl;
+        margin: 5% 0%;
+        border-left: 5px dotted #04EEC8;
 }
-.sesion1{
+.Film-section .Film-section-Rigth{
+        width: 35%;
+        height: 100%;
+}
+.Film-section .Film-section-Rigth:hover{
+        box-shadow: 4px 4px 30px #00D4AD;
+}
+.Film-section .Film-section-Left{
+        width: 100%;
+        padding:1% 3%;
+}
+.Film-section .Film-section-Left .Film-section-headeTitle{
         display: flex;
         justify-content: space-between;
-        color: white;
 }
-.s1 span{
+.Film-section .Film-section-Left .Film-section-headeTitle .Film-section-TitleName a{
+        text-decoration: none;
         color: white;
-        font-weight: 700;
-        font-size: 1.07rem;
+        font-size: 1.2em;
 }
-.s2{
+.Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB{
         display: flex;
+        justify-content: space-between;
 }
-.imdb span{
+.Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB i{
+        padding: 0px 0px 0px 10px;
+        color: gold;
+}
+.Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB span{
+        padding: 0px 0px 0px 5px;
+        color:  #00D4AD;
+}
+.Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB small{
+        color:  white;
+}
+.Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB .Film-section-IMDB-IMDB span{
+        color: white;
         background-color: #464232;
-        border: 0.5px solid #404040;
         padding: 5px 5px;
         font-weight:bold;
         border-radius: 10%;
 }
-.s2 .star{
-        padding: 0px 8px;
-}
-.s2 .star i{
-        color: #F5C518;
-}
-.s2 .star span{
-        color: #00D4AD;
-        padding: 0px 4px;
-        font-size: 1.2rem;
-}
-.s2 .star small{
-        color: white;
-}
-.imdb span:hover{
+.Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB .Film-section-IMDB-IMDB span:hover{
         cursor: pointer;
         background-color: #F3C74D;
         transition: 0.6s;
 }
-.d img:hover{
-        box-shadow: 4px 4px 30px #00D4AD;
-}
-.sesion2{
+.Film-section .Film-section-Left .Film-section-Information{
         display: flex;
         justify-content: space-between;
-        color: white;
+        padding-top: 2%;
 }
-.se1 i{
-        color: #00D4AD;
-        padding-left: 3px;
+.Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm ul{
+        list-style-type: none;
 }
-.mton{
-        color: #00D4AD;
+.Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm i{
+        padding: 0px 0px 0px 10px;
+        color:  #00D4AD;
 }
-.mton2{
-        font-size: 0.9rem;
-        font-weight: 700;
+.Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm .Film-section-TitleFilm-genre{
+        padding: 0px 0px 0px 7px;
+        color:  #00D4AD;
 }
-.mton2 big{
-        font-size: 0.9rem;
-        color: #777777;
+.Film-section .Film-section-Left .Film-section-Information .Film-section-score {
+        font-size:0.8em;
+        font-weight: bold;       
 }
-.se2 span{
-        font-size: 0.8rem;
-        font-weight: 800;
-}
-.mton3{
-        font-size: 0.8rem;
-        color: #777777;
-}
-.ses2{
-        display: flex;
-}
-.ses3 p{
-        width: 90%;
-}
-.ses4{
-        text-align: center;
-}
-.sesion3{
-        color: white;
-}
-.mton4{
-        font-size: 0.9rem;
-        font-weight: 700;
-}
+/* END Card Film */
