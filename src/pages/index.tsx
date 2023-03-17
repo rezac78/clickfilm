@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
 import Headers from "../components/Header/header"
 import Footer from "../components/Footer/Footer"
 import Main from "../components/Main/Main"
+import Image from 'next/image'
+import Netflex from "./Netflex"
 export default function Home() {
   return (
     <>
@@ -14,7 +15,7 @@ export default function Home() {
       </Head>
       <Headers />
       <Main />
-      <Footer/>
+      <Footer />
     </>
   )
 }

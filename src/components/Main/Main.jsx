@@ -1,6 +1,7 @@
 import Section from '../Left/Sections/section';
 import NewSection from '../Left/NewSection/newsection';
 import Serial from '../Left/Serial/serial';
+import SerialPart from '../Right/Serial/Serial';
 import Trailer from '../Left/Trailer/Trailer';
 import Grouping from '../Left/Grouping/Grouping';
 import SliderShow from '../Right/SliderShow/Slider';
@@ -13,26 +14,27 @@ export default function Main() {
                 <>
                         <section>
                                 <div className="class">
-                                        <main  className="fullpart">
+                                        <main className="fullpart">
                                                 <div className="row">
                                                         <div className="col-lg-4 col-md-12">
                                                                 <div className="container">
                                                                         <div className="partone">
                                                                                 <section>
-                                                                                       <Section/>
-                                                                                       <NewSection/>
-                                                                                       <Serial/>
-                                                                                       <Trailer/>
-                                                                                       <Grouping/>              
+                                                                                        <Section />
+                                                                                        <NewSection />
+                                                                                        <Serial />
+                                                                                        <Trailer />
+                                                                                        <Grouping />
                                                                                 </section>
                                                                         </div>
                                                                 </div>
                                                         </div>
-                                                        <div  className="col-lg-8 col-md-12 ">
+                                                        <div className="col-lg-8 col-md-12 ">
                                                                 <section className="">
-                                                                        <SliderShow/>
-                                                                        <Search/>
-                                                                        <Film/>
+                                                                        <SliderShow />
+                                                                        <Search />
+                                                                        <Film />
+                                                                        {/* <SerialPart/> */}
                                                                 </section>
                                                         </div>
                                                 </div>

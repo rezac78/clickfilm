@@ -1,0 +1,212 @@
+/* main start */
+.fullpart{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+}
+.card{
+        position: relative;
+        width: 600px;
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 20px;
+        background-color: red;
+}
+.card img{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 400px;
+        transition: 0.5s;
+}
+.card:hover img{
+        left: 80%;
+        height: 500px;
+}
+.card .content{
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        right: 20%;
+        padding: 20px 20px 20px 40px;
+        color: white;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        text-align: center;
+}
+
+.card:hover .content{
+        opacity: 1;
+        visibility: visible;
+        right: 20%;
+        text-align: center;
+        padding: 10px 0px;
+}
+.card .content h2{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        line-height: 1em;
+}
+.card .content p{
+        color: #fff;
+}
+.card .content a{
+        position: relative;
+        display: inline-block;
+        color: white;
+        background:linear-gradient(120deg , red, blue);
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+}
+
+.fromLeft {
+        animation-name: fromLeft;
+        animation-duration: 3s;
+}
+@keyframes fromLeft {
+        0% {
+        transform: translateX(-70px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0px);
+        opacity: 1;
+        }
+}
+
+/* part 2 end */
+/* main end */
+
+@media (max-width:991px)
+{
+        header{
+        padding: 20px 40px;
+        }
+        .banner{
+        padding: 40px;
+        overflow: hidden;
+        }
+        .banner::before{
+        top: 100px;
+        left: 0;
+        width: 170px;
+        height: 310px;
+        }
+        .banner::after{
+        bottom: 0;
+        right: 0;
+        width: 80px;
+        height: 60px;
+        }
+        .content{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        }
+        .content .contentBx{
+        max-width: 100%;
+        }
+        .content .imgBx img{
+        max-width: 100%;
+        min-width: 300px;
+        }
+        .content .contentBx h2{
+        font-size: 2.5em;
+        line-height: 1em;
+        color: #fff;
+        text-transform: uppercase;
+        }
+        .card{
+        position: relative;
+        width: auto;
+        max-width: 600px;
+        transition: 0.5s;
+        align-items: flex-start;
+        }
+        .card:hover{
+        height: 600px;
+        }
+        .card:hover img{
+        left: 50%;
+        height: 350px;
+        }
+        .card .content{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+        }
+}
+@media (max-width:420px){
+        .card .content{
+        padding: 30px;
+        }
+        .card:hover img{
+        height: 300px;
+        }
+}
+
+@media screen and (min-width: 60px) and (max-width: 1245px){
+
+}
+@media screen and (min-width: 60px) and (max-width: 1154px){
+        .card{
+        position: relative;
+        width: 500px;
+        height: 400px;
+        margin: 20px;
+        }
+}
+@media screen and (min-width: 60px) and (max-width: 992px){
+        .card{
+        position: relative;
+        width: 500px;
+        height: 400px;
+        margin-left: 25%;
+        }
+}
+@media screen and (min-width: 60px) and (max-width: 657px){
+        .card{
+        position: relative;
+        width: 500px;
+        height: 400px;
+        margin-left: 12.5%;
+        }
+}
+@media screen and (min-width: 60px) and (max-width: 561px){
+        .card{
+        position: relative;
+        width: 500px;
+        height: 400px;
+        margin-left: 6.25%;
+        }
+}
+@media screen and (min-width: 60px) and (max-width: 561px){
+        .card{
+        position: relative;
+        width: 500px;
+        height: 400px;
+        margin-left: 6.25%;
+        }
+}
+@media screen and (min-width: 60px) and (max-width: 519px){
+        .card{
+        position: relative;
+        width: 500px;
+        height: 400px;
+        margin-left: 3.10%;
+        }
+}
+@media screen and (min-width: 60px) and (max-width: 350px){
+        .card{
+        position: relative;
+        width: 600px;
+        height: 700px;
+        }
+}

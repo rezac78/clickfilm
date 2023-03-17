@@ -3,8 +3,13 @@ import '@/styles/globals.css';
 import Head from "next/head";
 import Script from "next/script";
 import "../components/Header/header.css";
+import "../styles/Netflex.css";
+import "../styles/Film.css";
 import "../components/Footer/Footer.css";
+import "../styles/download.css";
+import "../styles/Trailer.css";
 import "../components/Main/Main.css";
+import "../components/Right/Serial/Serial.css";
 import "bootstrap/dist/css/bootstrap.css";
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -36,3 +36,34 @@ export default function Header() {
                 </>
         )
 }
+
+
+{/* <div className="filmBx">
+        <video autoplay="" muted="" loop="" src="/video/2.mp4"></video>
+</div> */}
+
+{/* <div class="filmBx">
+        <video autoplay="" muted="" loop="" src="/video/3.mp4"></video>
+</div> */}
+
+{/* <div class="filmBx">
+        <video autoplay="" muted="" loop="" src="/video/1.mp4"></video>
+</div> */}
+{/* <div class="filmBx">
+        <video autoplay="" muted="" loop="" src="/video/4.mp4"></video>
+</div> */}
+
+{/* <section class="video">
+        <Image width={1500} height={10} src="/img/2.jpg" alt="" />
+        <div class="sphere">
+                <video src="/video/1.mp4" autoplay muted loop></video>
+        </div>
+</section> */}
+
+{/* <div className="containe">
+        <div className="clip clip1"></div>
+        <div className="clip clip2"></div>
+        <div className="clip clip3"></div>
+        <div className="clip clip4"></div>
+        <div className="clip clip5"></div>
+</div> */}

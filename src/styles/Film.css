@@ -1,0 +1,116 @@
+.containe .clip{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+}
+.containe .clip.clip1
+{
+        background-image: url("/img/postrt-film/1.jpg");
+        clip-path: polygon(0 0, 26% 0, 0 100%, 0 100%);
+        width: 100%;
+        background-size: cover;
+}
+.containe .clip.clip2
+{
+        background-image: url("/img/postrt-film/2.jpg");
+        width: 100%;
+        background-size: cover;
+        clip-path: polygon(26% 0, 45% 0, 15% 100%, 0 100%);
+
+}
+.containe .clip.clip3
+{
+        background-image: url("/img/postrt-film/3.jpg");
+        clip-path: polygon(43% 0, 65% 0, 40% 100%, 15% 100%);
+        width: 100%;
+        background-size: cover;
+}
+.containe .clip.clip4
+{
+        background-image: url("/img/postrt-film/4.jpg");
+        clip-path: polygon(64% 0, 83% 0, 63% 100%, 38% 100%);
+        width: 100%;
+        background-size: cover;
+}
+.containe .clip.clip5
+{
+        background-image: url("/img/postrt-film/5.jpg");
+        background-size: cover;
+        clip-path: polygon(83% 0, 100% 0, 100% 100%, 63% 100%);
+}
+.containe .clip.clip6
+{
+        background-image: url("/img/postrs/1.jpg");
+        clip-path: polygon(0 0, 26% 0, 0 100%, 0 100%);
+        width: 100%;
+        background-size: cover;
+}
+.containe .clip.clip7
+{
+        background-image: url("/img/postrs/2.jpg");
+        width: 100%;
+        background-size: cover;
+        clip-path: polygon(26% 0, 45% 0, 15% 100%, 0 100%);
+
+}
+.containe .clip.clip8
+{
+        background-image: url("/img/postrs/3.jpg");
+        clip-path: polygon(43% 0, 65% 0, 40% 100%, 15% 100%);
+        width: 100%;
+        background-size: cover;
+}
+.containe .clip.clip9
+{
+        background-image: url("/img/postrs/4.jpg");
+        clip-path: polygon(64% 0, 83% 0, 63% 100%, 38% 100%);
+        width: 100%;
+        background-size: cover;
+}
+.containe .clip.clip10
+{
+        background-image: url("/img/postrs/5.jpg");
+        background-size: cover;
+        clip-path: polygon(83% 0, 100% 0, 100% 100%, 63% 100%);
+}
+.containe:hover .clip{
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.containe .clip:hover {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+@media screen and (min-width: 60px) and (max-width: 426px){
+        .containe .clip.clip1{
+        background-image: url(/img/postrt-film/6.jpg);
+        }
+        .containe .clip.clip2{
+        background-image: url(/img/postrt-film/7.jpg);
+        }
+        .containe .clip.clip3{
+        background-image: url(/img/postrt-film/8.jpg);
+        }
+        .containe .clip.clip4{
+        background-image: url(/img/postrt-film/9.jpg);
+        }
+        .containe .clip.clip5{
+        background-image: url(/img/postrt-film/10.jpg);
+        }
+        .containe .clip.clip6{
+                background-image: url(/img/postrs/8.jpg);
+        }
+        .containe .clip.clip7{
+                background-image: url(/img/postrs/6.jpg);
+        }
+        .containe .clip.clip8{
+                background-image: url(/img/postrs/7.jpg);
+        }
+        .containe .clip.clip9{
+                background-image: url(/img/postrs/9.jpg);
+        }
+        .containe .clip.clip10{
+                background-image: url(/img/postrs/10.jpg);
+        }
+}
