@@ -8,7 +8,7 @@ export default function Serial() {
                         </div>
                         <div className="partserial">
                                 <div className="mt-3">
-                                        <a href="/serial"><Image width={500} height={120} src="/img/home/left/film1/2.jpg" alt="" /></a>
+                                        <Link href="/Serial"><Image width={500} height={120} src="/img/home/left/film1/2.jpg" alt="" /></Link>
                                 </div>
                                 <div className="">
                                         <div className="serialpart">
@@ -17,7 +17,7 @@ export default function Serial() {
                                         </div>
                                 </div>
                                 <div className="mt-3">
-                                        <a href="/serial"><Image width={500} height={120} src="/img/home/left/film1/4.jpg" alt="" /></a>
+                                        <Link href="/serial"><Image width={500} height={120} src="/img/home/left/film1/4.jpg" alt="" /></Link>
                                 </div>
                                 <div className="">
                                         <div className="serialpart">
@@ -54,7 +54,7 @@ export default function Serial() {
                                 </div>
                         </div>
                         <div className="text-center submit-one mt-3">
-                                <a href="/serial"><span style={{ "color": "#00D4AD;" }}>ورود به ارشیو سریال ها</span></a>
+                                <a href="/Serial"><span style={{ "color": "#00D4AD;" }}>ورود به ارشیو سریال ها</span></a>
                         </div>
                 </>
         )

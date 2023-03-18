@@ -16,7 +16,7 @@ export default function Trailer() {
                                 </div>
                         </div>
                         <div className="text-center submit-one mt-3">
-                                <a href="/trailer"><span style={{ "color": "#00D4AD;" }}>ورود به ارشیو تریلرها</span></a>
+                                <Link href="/Trailer"><span style={{ "color": "#00D4AD;" }}>ورود به ارشیو تریلرها</span></Link>
                         </div>
                 </>
         )
