@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Headers from "../components/Header/header"
 import Footer from "../components/Footer/Footer"
 import Main from "../components/Main/Main"
-import Image from 'next/image'
-import Netflex from "./Netflix"
 export default function Home() {
   return (
     <>

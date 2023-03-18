@@ -1,51 +1,62 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 export default function Header() {
         const [isActive, setIsActive] = useState(false);
+        const [scrollY, setScrollY] = useState(0);
         const handleClick = () => {
                 setIsActive(!isActive);
         };
         const router = useRouter();
+        useEffect(() => {
+                const handleScroll = () => {
+                        setScrollY(window.scrollY);
+                };
+                handleScroll();
+                window.addEventListener("scroll", handleScroll);
+                return () => {
+                        window.removeEventListener("scroll", handleScroll);
+                };
+        }, []);
         return (
                 <>
                         <section className={`banner ${isActive ? "active" : ""}`}>
                                 <header>
-                                        <Link href="/" className="logo">click <big style={{ "color": "black" }} >FILM</big></Link>
+                                        <Link href="/" className="logo">Click <big style={{ "color": "black" }} >FILM</big></Link>
                                         <div className={`toggle ${isActive ? "active" : ""}`} onClick={handleClick}></div>
                                 </header>
                                 {
                                         router.route == "/" ?
                                                 <div className="content">
                                                         <div className="contentBx">
-                                                                <p style={{ "color": "aqua;" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis amet minus ipsum officia nulla praesentium dignissimos atque! Debitis, in sint! Quidem aut recusandae praesentium ullam, quod assumenda necessitatibus sit laboriosam amet aliquam. Quae quos dolorem dolores aliquid similique eveniet, repudiandae reiciendis, molestias corrupti ullam consectetur! Illo sit error ullam aliquid, perferendis vero iste ducimus eos amet distinctio, excepturi neque cumque laboriosam aperiam quo, nesciunt aliquam nostrum voluptas temporibus in eius nam quod quisquam sapiente. Debitis, optio! Beatae quod dolore delectus, voluptates necessitatibus ut velit quae dolores maxime, accusamus est. Tempora, deleniti maxime. Repudiandae eos necessitatibus consequatur dignissimos accusantium quod, voluptatibus nobis laudantium ratione quasi ea voluptate eius cupiditate, labore aliquam obcaecati deserunt eveniet atque! Itaque nesciunt exercitationem quia quisquam?</p>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis amet minus ipsum officia nulla praesentium dignissimos atque! Debitis, in sint! Quidem aut recusandae praesentium ullam, quod assumenda necessitatibus sit laboriosam amet aliquam. Quae quos dolorem dolores aliquid similique eveniet, repudiandae reiciendis, molestias corrupti ullam consectetur! Illo sit error ullam aliquid, perferendis vero iste ducimus eos amet distinctio, excepturi neque cumque laboriosam aperiam quo, nesciunt aliquam nostrum voluptas temporibus in eius nam quod quisquam sapiente. Debitis, optio! Beatae quod dolore delectus, voluptates necessitatibus ut velit quae dolores maxime, accusamus est. Tempora, deleniti maxime. Repudiandae eos necessitatibus consequatur dignissimos accusantium quod, voluptatibus nobis laudantium ratione quasi ea voluptate eius cupiditate, labore aliquam obcaecati deserunt eveniet atque! Itaque nesciunt exercitationem quia quisquam?</p>
                                                         </div>
                                                         <div className="imgBx">
                                                                 <Image width={400} height={700} src="/img/marvel.png" alt="imgcover" />
                                                         </div>
                                                 </div> :
                                                 router.route == "/Netflix" ?
-                                                        <div className="filmBx">
+                                                        <div className={scrollY <= 300 ? "filmBx" : "filmBx2"}>
                                                                 <video loop muted autoPlay >
                                                                         <source type="video/webm" src="/video/2.mp4" />
                                                                 </video>
                                                         </div>
                                                         :
                                                         router.route == "/HBO" ?
-                                                                <div className="filmBx">
+                                                                <div className={scrollY <= 300 ? "filmBx" : "filmBx2"}>
                                                                         <video loop muted autoPlay >
                                                                                 <source type="video/webm" src="/video/3.mp4" />
                                                                         </video>
                                                                 </div> :
                                                                 router.route == "/Marvel" ?
-                                                                        <div className="filmBx">
+                                                                        <div className={scrollY <= 300 ? "filmBx" : "filmBx2"}>
                                                                                 <video loop muted autoPlay >
                                                                                         <source type="video/webm" src="/video/1.mp4" />
                                                                                 </video>
                                                                         </div> :
                                                                         router.route == "/BW" ?
-                                                                                <div className="filmBx">
+                                                                                <div className={scrollY <= 300 ? "filmBx" : "filmBx2"}>
                                                                                         <video loop muted autoPlay >
                                                                                                 <source type="video/webm" src="/video/4.mp4" />
                                                                                         </video>

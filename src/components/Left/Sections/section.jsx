@@ -8,7 +8,7 @@ export default function Section() {
                                         <div className="textCollection text-center">
                                                 <span>بخش ها</span>
                                         </div>
-                                        <Link href="/Netflex"><Image width={500} height={250} className="mt-2" src="/img/home/left/1.png" alt="" /></Link>
+                                        <Link href="/Netflix"><Image width={500} height={250} className="mt-2" src="/img/home/left/1.png" alt="" /></Link>
                                         <Link href="/HBO"><Image width={500} height={250} src="/img/home/left/4.png" alt="" /></Link>
                                         <Link href="/Marvel"><Image width={500} height={250} src="/img/home/left/5.png" alt="" /></Link>
                                         <Link href="/BW"><Image width={500} height={250} src="/img/home/left/2.png" alt="" /></Link>

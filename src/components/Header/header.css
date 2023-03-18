@@ -69,6 +69,17 @@
         align-items: center;
         overflow: hidden;
 }
+.filmBx2{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        opacity: 0;
+        transition: 1.5s;
+}
 .filmBx video{
         position: fixed;
         top: 0;
@@ -86,13 +97,19 @@
 {
         max-width: 600px;
 }
+.content .contentBx p
+{
+        color: #4CD5AE;
+        font-size: 1.2rem;
+}
 
-.content .imgBx img{
-        max-width: 50%;
-        min-width: 400px;
+
+.content .imgBx{
+        margin: 0% 8%;
 }
 .sci{
         position: absolute;
+        left: 3%;
         bottom: 2px;
         display: flex;
         justify-content: center;

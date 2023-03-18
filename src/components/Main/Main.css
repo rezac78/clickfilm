@@ -1,16 +1,10 @@
 .fullpart{
         display: flex;
 }
-.partone{
-        background-color: #20242C;
+.AllMain{
+        background:#111111;
 }
 
-.collection{
-        cursor: pointer;
-}
-.collection img{
-        width: 100%;
-}
 .textCollection span{
         color: #00D4AD;
         font-size: 1.2rem;

@@ -1,19 +1,16 @@
-/* main start */
-.fullpart{
+.card-cantainer{
         display: flex;
-        align-items: center;
-        min-height: 100vh;
+        flex-wrap: wrap;
+        background-color: black;
 }
 .card{
         position: relative;
-        width: 600px;
-        height: 400px;
-        margin: 20px;
+        width: 31%;
+        height: auto;
+        margin: 4% 1%;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
         border-radius: 20px;
-        background-color: red;
 }
 .card img{
         position: absolute;
@@ -27,7 +24,7 @@
         left: 80%;
         height: 500px;
 }
-.card .content{
+.card .card-content{
         position: relative;
         display: inline-block;
         width: 50%;
@@ -40,23 +37,23 @@
         text-align: center;
 }
 
-.card:hover .content{
+.card:hover .card-content{
         opacity: 1;
         visibility: visible;
         right: 20%;
         text-align: center;
         padding: 10px 0px;
 }
-.card .content h2{
+.card .card-content h2{
         color: #fff;
         text-transform: uppercase;
         font-size: 2.5em;
         line-height: 1em;
 }
-.card .content p{
+.card .card-content p{
         color: #fff;
 }
-.card .content a{
+.card .card-content a{
         position: relative;
         display: inline-block;
         color: white;

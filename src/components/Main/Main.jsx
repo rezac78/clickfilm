@@ -11,7 +11,7 @@ import { FilmValues } from "../../events/events"
 export default function Main() {
         return (
                 <>
-                        <section>
+                        <section className='AllMain'>
                                 <div className="class">
                                         <main className="fullpart">
                                                 <div className="row">
