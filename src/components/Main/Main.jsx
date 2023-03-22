@@ -1,14 +1,16 @@
+import { useRouter } from 'next/router';
 import Section from '../Left/Sections/section';
 import NewSection from '../Left/NewSection/newsection';
 import Serial from '../Left/Serial/serial';
 import SerialPart from '../Right/Serial/Serial';
-import Trailer from '../Left/Trailer/Trailer';
+import TrailerPart from '../Left/Trailer/Trailer';
 import Grouping from '../Left/Grouping/Grouping';
 import SliderShow from '../Right/SliderShow/Slider';
 import Search from '../Right/Search/Search';
 import Film from '../Right/Film/Film';
 import { FilmValues } from "../../events/events"
 export default function Main() {
+        const router = useRouter();
         return (
                 <>
                         <section className='AllMain'>
@@ -22,7 +24,7 @@ export default function Main() {
                                                                                         <Section />
                                                                                         <NewSection />
                                                                                         <Serial />
-                                                                                        <Trailer />
+                                                                                        <TrailerPart />
                                                                                         <Grouping />
                                                                                 </section>
                                                                         </div>
@@ -30,14 +32,16 @@ export default function Main() {
                                                         </div>
                                                         <div className="col-lg-8 col-md-12 ">
                                                                 <section className="">
-                                                                        <SliderShow />
-                                                                        <Search />
                                                                         {
-                                                                                FilmValues.map((e) => {
-                                                                                        return <Film key={e.id} img={e.image} name={e.name} score={e.score} type={e.type} Quality={e.Quality} ProductCountry={e.ProductCountry} Director={e.Director} Actors={e.Actors} summary={e.summary} score2={e.score2} />
-                                                                                })
+                                                                                router.route == "/" ? <SliderShow /> : null
                                                                         }
-                                                                        {/* <SerialPart/> */}
+                                                                        {
+                                                                                router.route == "/Serial" ? <SerialPart />
+                                                                                        :
+                                                                                        FilmValues.map((e) => {
+                                                                                                return <Film key={e.id} img={e.image} name={e.name} score={e.score} type={e.type} Quality={e.Quality} ProductCountry={e.ProductCountry} Director={e.Director} Actors={e.Actors} summary={e.summary} score2={e.score2} />
+                                                                                        })
+                                                                        }
                                                                 </section>
                                                         </div>
                                                 </div>

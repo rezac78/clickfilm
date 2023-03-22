@@ -1,54 +1,23 @@
-
-/* main start */
-.partone{
-        background-color: #20242C;
+.SerialPart{
+        display: flex;
+        background:white;
+        width: 40%;
 }
-
-.collection{
-        cursor: pointer;
-}
-.collection img{
+.overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
         width: 100%;
-}
-.textCollection span{
-        color: #00D4AD;
-        font-size: 1.2rem;
-}
-.text-one{
-        cursor: pointer;
-}
-.text-one a{
-        text-decoration: none;
-}
-.fil{
-        color: red;
-        font-size: 1.1rem;
-        padding: 10px 5px;
-}
-.poster-film img{
-        width: 32%;
-        height: 25vh;
-        padding: 5px 5px;
-        cursor: pointer;
-}
-.poster-film img:hover{
-        opacity: 0.7;
-}
-.submit-one{
-        border: 2px solid #173D41;
-        background-color: #173D41;
-        cursor: pointer;
-        height: 5vh;
-}
-.submit-one a{
-        text-decoration: none;
-}
-.partserial img{
-        width: 100%;
-}
-.partserial img:hover{
-        filter: contrast(150%);
-}
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(0, 0, 0, 0.616);
+    }  
+    .card:hover .overlay {
+        opacity: 1;
+    }
 .serialpart{
         display: flex;
         justify-content: space-between;
@@ -230,6 +199,24 @@
         .poster-film img{
         width: 32%;
         height: 35vh;
+        }
+}
+
+@media screen and (min-width: 60px) and (max-width: 426px){
+        .containe .clip.clip1{
+        background-image: url(/img/postrs/8.jpg);
+        }
+        .containe .clip.clip2{
+        background-image: url(/img/postrs/6.jpg);
+        }
+        .containe .clip.clip3{
+        background-image: url(/img/postrs/7.jpg);
+        }
+        .containe .clip.clip4{
+        background-image: url(/img/postrs/9.jpg);
+        }
+        .containe .clip.clip5{
+        background-image: url(/img/postrs/10.jpg);
         }
 }
 @media screen and (min-width: 60px) and (max-width: 528px){
