@@ -1,9 +1,40 @@
-.SerialPart{
+.PartCard{
         display: flex;
-        background:white;
-        width: 40%;
+        flex-wrap: wrap;
+        justify-content:space-around;
 }
-.overlay {
+.CardSerial{
+        width: 40%;
+        height: auto;
+        background:white;
+        margin: 3% 0;
+}
+.CardSerial-Down{
+        padding: 0% 0px;
+}
+.CardSerial-UP .imgcaver{
+        display:flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        background-color: #111214d7;
+}
+.CardSerial-Down .cardtitle{
+        display:flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+}
+.CardSerial-Down .cardtitle2{
+        display:flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+}
+.CardSerial-UP .overlay .text {
+        color: black;
+        font-weight: bold;
+        padding: 1% 15px;
+        text-align: right;
+}
+/* .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -14,10 +45,11 @@
         opacity: 0;
         transition: .5s ease;
         background-color: rgba(0, 0, 0, 0.616);
-    }  
-    .card:hover .overlay {
-        opacity: 1;
-    }
+}   */
+/* .CardSerial-UP:hover {
+        background-color: rgba(0, 0, 0, 0.616);
+
+} */
 .serialpart{
         display: flex;
         justify-content: space-between;

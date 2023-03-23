@@ -31,18 +31,17 @@ export default function Main() {
                                                                 </div>
                                                         </div>
                                                         <div className="col-lg-8 col-md-12 ">
-                                                                <section className="">
-                                                                        {
-                                                                                router.route == "/" ? <SliderShow /> : null
-                                                                        }
-                                                                        {
-                                                                                router.route == "/Serial" ? <SerialPart />
-                                                                                        :
-                                                                                        FilmValues.map((e) => {
-                                                                                                return <Film key={e.id} img={e.image} name={e.name} score={e.score} type={e.type} Quality={e.Quality} ProductCountry={e.ProductCountry} Director={e.Director} Actors={e.Actors} summary={e.summary} score2={e.score2} />
-                                                                                        })
-                                                                        }
-                                                                </section>
+
+                                                                {
+                                                                        router.route == "/" ? <SliderShow /> : null
+                                                                }
+                                                                {
+                                                                        router.route == "/Serial" ? <SerialPart />
+                                                                                :
+                                                                                FilmValues.map((e) => {
+                                                                                        return <Film key={e.id} img={e.image} name={e.name} score={e.score} type={e.type} Quality={e.Quality} ProductCountry={e.ProductCountry} Director={e.Director} Actors={e.Actors} summary={e.summary} score2={e.score2} />
+                                                                                })
+                                                                }
                                                         </div>
                                                 </div>
                                         </main>
