@@ -1,3 +1,7 @@
+.CardSerial-Link{
+        text-decoration: none;
+        color: black;
+}
 .PartCard{
         display: flex;
         flex-wrap: wrap;
@@ -11,12 +15,19 @@
 }
 .CardSerial-Down{
         padding: 0% 0px;
+        background-color: #a2a4a7d7;
 }
 .CardSerial-UP .imgcaver{
         display:flex;
         justify-content: space-between;
         padding: 0px 10px;
-        background-color: #111214d7;
+        background-color: #a2a4a7d7;
+}
+.CardSerial-UP .imgcaver .star{
+        color: gold;
+}
+.CardSerial-UP .imgcaver .star span{
+        color: black;
 }
 .CardSerial-Down .cardtitle{
         display:flex;
@@ -34,22 +45,6 @@
         padding: 1% 15px;
         text-align: right;
 }
-/* .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: rgba(0, 0, 0, 0.616);
-}   */
-/* .CardSerial-UP:hover {
-        background-color: rgba(0, 0, 0, 0.616);
-
-} */
 .serialpart{
         display: flex;
         justify-content: space-between;
