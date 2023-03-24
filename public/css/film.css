@@ -332,13 +332,6 @@ header .logo{
 .postrs img{
     height: 70vh;
 }
-.user-info{
-    background-color: #282C33;
-    color: #04EEC8;
-    height: 20vh;
-    padding: 20px 10px;
-    width: 100%;
-}
 .img-name{
     display: flex;
     justify-content: space-between;
