@@ -78,10 +78,12 @@ export default function Header() {
                                                                                                         <div className="clip clip10"></div>
                                                                                                 </div> :
                                                                                                 router.route == "/Download" ?
-                                                                                                        <section class="video">
-                                                                                                                <Image width={1500} height={10} src="/img/2.jpg" alt="" />
-                                                                                                                <div class="sphere">
-                                                                                                                        <video src="/video/1.mp4" autoplay muted loop></video>
+                                                                                                        <section className="video">
+                                                                                                                <Image width={1700} height={700} src="/img/2.jpg" alt="" />
+                                                                                                                <div className="sphere">
+                                                                                                                        <video loop muted autoPlay >
+                                                                                                                                <source type="video/webm" src="/video/4.mp4" />
+                                                                                                                        </video>
                                                                                                                 </div>
                                                                                                         </section> :
                                                                                                         null
