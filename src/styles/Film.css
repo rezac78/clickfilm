@@ -6,19 +6,21 @@
 .GroupingMain{
         display: flex;
         flex-wrap: wrap;
+        margin: 0px 16% 0px 0px;
 }
 .GroupingOnce{
         width: 50%;
-        text-align: center;
-        padding: 2% 0;
+        text-align: right;
+        padding: 3% 0;
+        
 }
 .GroupingOnce span{
         color: #02e4cd;
         padding: 0 10px;
+        font-size: 1.4rem;
 }
-.GroupingOnce span{
-        color: #02e4cd;
-        padding: 0 10px;
+.GroupingOnce a{
+        text-decoration: none;
 }
 
 /* Grouping */
