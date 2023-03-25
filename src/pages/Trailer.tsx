@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Meta from '@/components/MetaTitle/Meta'
+import Footer from '@/components/Footer/Footer'
 export default function Trailer() {
         return (
                 <>
@@ -17,7 +18,7 @@ export default function Trailer() {
                                 <video src="/video/h.mp4" controls="true"></video>
                                 <Image width={500} height={200} src="/img/close.png" className="close" onclick="toggle();" alt="" />
                         </div>
-
+                        <Footer />
                 </>
         )
 }
