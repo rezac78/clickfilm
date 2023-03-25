@@ -30,7 +30,9 @@ export default function Header() {
                                         router.route == "/" ?
                                                 <div className="content">
                                                         <div className="contentBx">
-                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis amet minus ipsum officia nulla praesentium dignissimos atque! Debitis, in sint! Quidem aut recusandae praesentium ullam, quod assumenda necessitatibus sit laboriosam amet aliquam. Quae quos dolorem dolores aliquid similique eveniet, repudiandae reiciendis, molestias corrupti ullam consectetur! Illo sit error ullam aliquid, perferendis vero iste ducimus eos amet distinctio, excepturi neque cumque laboriosam aperiam quo, nesciunt aliquam nostrum voluptas temporibus in eius nam quod quisquam sapiente. Debitis, optio! Beatae quod dolore delectus, voluptates necessitatibus ut velit quae dolores maxime, accusamus est. Tempora, deleniti maxime. Repudiandae eos necessitatibus consequatur dignissimos accusantium quod, voluptatibus nobis laudantium ratione quasi ea voluptate eius cupiditate, labore aliquam obcaecati deserunt eveniet atque! Itaque nesciunt exercitationem quia quisquam?</p>
+                                                                <p>
+                                                                        سینما این شانس رو به ما میده تا موقعیت‌های متفاوتی که شاید هیچوقت تو دنیای واقعی باهاشون برخورد نکنیم رو تجربه کنیم در موردشون فکر کنیم و با خودمون بگیم اگه من بودم چی میشد، چه تصمیمی میگرفتم. و اینجوریه که شما در وسعت زمانی و مکانی و جغرافیایی خیلی بزرگتری بارها جای آدمهای مختلف زندگی می‌کنید.
+                                                                </p>
                                                         </div>
                                                         <div className="imgBx">
                                                                 <Image width={400} height={700} src="/img/marvel.png" alt="imgcover" />

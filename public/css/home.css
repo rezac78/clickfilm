@@ -86,30 +86,6 @@ header .logo{
     transform: scale(0);
     transform-origin:left;
 }
-.toggle{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: url(/img/menu.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px;
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 25px 26px;
-    background-color: white;
-}
-.toggle.active{
-    background: url(/img/close.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25px;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 25px 26px;
-    background-color: white;
-}
 
 .content{
     position: relative;
@@ -202,12 +178,12 @@ header .logo{
 }
 .parttwo{
 }
-.collection{
+/* .collection{
     cursor: pointer;
 }
 .collection img{
     width: 100%;
-}
+} */
 .textCollection span{
     color: #00D4AD;
     font-size: 1.2rem;

@@ -1,3 +1,46 @@
+header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 100px;
+}
+header .logo{
+        font-size: 2em;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.5s;
+        transform-origin: right;
+}
+.toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(/img/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 25px 26px;
+        background-color: white;
+}
+.toggle.active{
+        background: url(/img/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 25px 26px;
+        background-color: white;
+}
 .banner{
         position: relative;
         width: 100%;
@@ -101,6 +144,7 @@
 {
         color: #4CD5AE;
         font-size: 1.2rem;
+        text-align: right;
 }
 
 
@@ -130,9 +174,6 @@
         display: inline-block;
         transform: scale(0.6);
 }
-.sci li a img{
-        width: 75px;
-}
 .menu{
         position: fixed;
         top: 0;
@@ -161,4 +202,55 @@
         color: #fff;
         text-decoration: none;
         font-size: 2em;
+}
+.collection img{
+        width: 100%;
+}
+/* ALL RESPONCEV */
+@media screen and (max-width: 576px){
+        .content .contentBx p
+        {
+                color: #4CD5AE;
+                font-size: 1rem;
+                text-align: center;
+        } 
+        .content .imgBx img{
+                height: 70vh;
+        }
+        .sci li a img{
+                height: 5vh;
+                width: 50px;
+        }
+}
+@media screen and (max-width: 425px){
+        .content .contentBx p
+        {
+                font-size: 0.7rem;
+        } 
+        .content .imgBx img{
+                height: 50vh;
+        }
+        header .logo {
+                font-size: 1.2em;
+                color: #fff;
+                font-weight: 600;
+                text-decoration: none;
+                transition: 0.5s;
+                transform-origin: right;
+        }
+        .toggle{
+                width: 20px;
+                height: 20px;
+                background-size: 23px;
+                padding: 17px 19px;
+        }
+        .toggle.active{
+                background-size: 20px;
+                padding: 17px 19px;
+        }
+        .menu li a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5em;
+        }
 }
