@@ -12,6 +12,7 @@ import "../styles/Trailer.css";
 import "../components/Main/Main.css";
 import "../components/Right/Serial/Serial.css";
 import "bootstrap/dist/css/bootstrap.css";
+import '../components/Left/NewSection/Swiper.css';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
           crossOrigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
         <title>Click Film</title>
       </Head>
       <Script
@@ -33,6 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossOrigin="anonymous"
       />
+      <Script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" />
       <Component {...pageProps} />
     </>
   );

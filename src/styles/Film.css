@@ -1,3 +1,27 @@
+/* Grouping */
+
+.Grouping{
+        width: 100%;
+}
+.GroupingMain{
+        display: flex;
+        flex-wrap: wrap;
+}
+.GroupingOnce{
+        width: 50%;
+        text-align: center;
+        padding: 2% 0;
+}
+.GroupingOnce span{
+        color: #02e4cd;
+        padding: 0 10px;
+}
+.GroupingOnce span{
+        color: #02e4cd;
+        padding: 0 10px;
+}
+
+/* Grouping */
 .containe .clip{
         position: absolute;
         top: 0;

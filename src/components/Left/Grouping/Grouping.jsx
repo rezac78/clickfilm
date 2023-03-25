@@ -6,7 +6,19 @@ export default function Grouping() {
                         <div className="textCollection text-center mt-2">
                                 <span>دسته بندی فیلم ها</span>
                         </div>
-                        <div className="">
+                        <div className="Grouping">
+                                <div className="GroupingMain">
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                        <div className="GroupingOnce"><a href="#">انیمیشن</a><span>50</span></div>
+                                </div>
+                        </div>
+                        {/* <div className="">
                                 <div className="row">
                                         <div className="col-lg-6">
                                                 <div className="list text-right m-4">
@@ -39,7 +51,7 @@ export default function Grouping() {
                                                 </div>
                                         </div>
                                 </div>
-                        </div>
+                        </div> */}
                         <div className="textCollection text-center mt-2">
                                 <span>دسته بندی سریال ها</span>
                         </div>
