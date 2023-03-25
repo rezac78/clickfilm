@@ -8,8 +8,8 @@ export default function Trailer() {
                                 <SubTitle NameTitle="آخرین تریلرها" />
                         </div>
 
-                        <div className="trailer m-3">
-                                <Link href=""><Image width={500} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
+                        <div className="Trailer m-3">
+                                <Link href=""><Image width={550} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
                                 <div className="">
                                         <div className="serialpart2">
                                                 <div className="right3"><span>the walking ded</span></div>

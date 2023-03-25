@@ -1,16 +1,11 @@
 export default function Search() {
         return (
                 <>
-                        <div className="container mt-4">
-                                <div className="user-info">
-                                        <div className="img-name">
-                                                <i onclick="toggleUserDetails()" className="fas fa-chevron-down"></i>
-                                                <span>جستجوی پیشرفته</span>
-                                        </div>
-                                        <div className="details">
-                                                <input type="search" placeholder="دنبال چی می گردی .." className="form-control" />
-                                        </div>
-                                </div>
+                        <div className="search__container">
+                                <p className="search__title">
+                                        جستجوی پیشرفته
+                                </p>
+                                <input className="search__input text-center" type="text" placeholder="دنبال چی می گردی" />
                         </div>
                 </>
         )

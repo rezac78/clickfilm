@@ -8,7 +8,7 @@ export default function Grouping() {
                                 <SubTitle NameTitle="دسته بندی فیلم ها" />
                         </div>
                         <div className="Grouping">
-                                <div className="GroupingMain">
+                                <div className="GroupingMain mt-4">
                                         {
                                                 GroupingValues.map((e) => {
                                                         return <GroupingBox key={e.id} Name={e.name} Number={e.Number} />
@@ -20,7 +20,7 @@ export default function Grouping() {
                                 <SubTitle NameTitle="دسته بندی سریال ها" />
                         </div>
                         <div className="Grouping">
-                                <div className="GroupingMain">
+                                <div className="GroupingMain mt-4">
                                         {
                                                 GroupingValues2.map((e) => {
                                                         return <GroupingBox key={e.id} Name={e.name} Number={e.Number} />

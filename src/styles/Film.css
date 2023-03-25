@@ -14,7 +14,64 @@
         text-decoration: none;
 }
 /* c */
+/* Search */
+.search__container {
+        padding: 64px;
+}
 
+.search__title {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        color: #02e4cd;
+}
+
+.search__input {
+        width: 100%;
+        padding: 12px 24px;
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        color: #02e4cd;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #02e4cd;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+        color: #02e4cd;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #02e4cd;
+        border-radius: 0;
+        background-position: 100% center;
+}
+
+.credits__container {
+        margin-top: 24px;
+}
+
+.credits__text {
+        text-align: center;
+        font-size: 13px;
+        line-height: 18px;
+}
+
+/* Search */
 
 /* Grouping */
 .Grouping{
@@ -28,7 +85,7 @@
 .GroupingOnce{
         width: 50%;
         text-align: right;
-        padding: 3% 0;
+        padding: 1% 0;
         
 }
 .GroupingOnce span{

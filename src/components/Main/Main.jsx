@@ -18,7 +18,7 @@ export default function Main() {
                                 <div className="class">
                                         <main className="fullpart">
                                                 <div className="row">
-                                                        <div className="col-lg-4 col-md-12">
+                                                        <div className="col-lg-4 col-md-12" style={{ "background": "#20242C" }}>
                                                                 <div className="container">
                                                                         <div className="partone">
                                                                                 <section>
@@ -31,8 +31,8 @@ export default function Main() {
                                                                         </div>
                                                                 </div>
                                                         </div>
-                                                        <div className="col-lg-8 col-md-12 ">
-
+                                                        <div className="col-lg-8 col-md-12" style={{ "background": "#20242C" }}>
+                                                                <Search/>
                                                                 {
                                                                         router.route == "/" ? <SliderShow /> : null
                                                                 }
