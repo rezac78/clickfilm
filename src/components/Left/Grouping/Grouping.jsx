@@ -1,12 +1,11 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import GroupingBox from "../../Grouping/Grouping"
 import { GroupingValues, GroupingValues2 } from "../../../events/events"
+import SubTitle from '@/components/SubTitle/subTitle'
 export default function Grouping() {
         return (
                 <>
-                        <div className="textCollection text-center mt-2">
-                                <span>دسته بندی فیلم ها</span>
+                        <div className="mt-2">
+                                <SubTitle NameTitle="دسته بندی فیلم ها" />
                         </div>
                         <div className="Grouping">
                                 <div className="GroupingMain">
@@ -17,8 +16,8 @@ export default function Grouping() {
                                         }
                                 </div>
                         </div>
-                        <div className="textCollection text-center mt-2">
-                                <span>دسته بندی سریال ها</span>
+                        <div className="mt-2">
+                                <SubTitle NameTitle="دسته بندی سریال ها" />
                         </div>
                         <div className="Grouping">
                                 <div className="GroupingMain">

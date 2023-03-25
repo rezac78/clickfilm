@@ -9,6 +9,7 @@ import SliderShow from '../Right/SliderShow/Slider';
 import Search from '../Right/Search/Search';
 import Film from '../Right/Film/Film';
 import { FilmValues } from "../../events/events"
+import SubTitle from '../SubTitle/subTitle';
 export default function Main() {
         const router = useRouter();
         return (
@@ -34,6 +35,15 @@ export default function Main() {
 
                                                                 {
                                                                         router.route == "/" ? <SliderShow /> : null
+                                                                }
+                                                                {
+                                                                        router.route == "/" ? <div className="mt-4">
+                                                                                <SubTitle NameTitle="آخرین فیلم های سایت" />
+                                                                        </div> : router.route == "/Film" ? <div className="mt-1">
+                                                                                <SubTitle NameTitle="آخرین فیلم های سایت" />
+                                                                        </div> : <div className="mt-1">
+                                                                                <SubTitle NameTitle="آخرین سریال های سایت" />
+                                                                        </div>
                                                                 }
                                                                 {
                                                                         router.route == "/Serial" ? <SerialPart />

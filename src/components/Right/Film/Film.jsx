@@ -3,10 +3,6 @@ import Link from 'next/link'
 export default function Film({ img, name, score, type, Quality, ProductCountry, Director, Actors, summary, score2 }) {
         return (
                 <>
-                        <div className="textCollection text-center mt-4">
-                                <span>اخرین فیلم های سایت</span>
-                        </div>
-
                         <div className="Film-section">
                                 <div className="Film-section-Rigth">
                                         <Link href="/Download"><Image width={310} height={310} src={img} alt="poster-Film" /></Link>

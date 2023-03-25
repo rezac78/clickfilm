@@ -1,10 +1,11 @@
+import SubTitle from '@/components/SubTitle/subTitle'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function Serial() {
         return (
                 <>
-                        <div className="textCollection text-center">
-                                <span>آخرین سریال ها</span>
+                        <div className="mt-2">
+                                <SubTitle NameTitle="آخرین سریال ها" />
                         </div>
                         <div className="partserial">
                                 <div className="mt-3">
@@ -54,7 +55,9 @@ export default function Serial() {
                                 </div>
                         </div>
                         <div className="text-center submit-one mt-3">
-                                <a href="/Serial"><span style={{ "color": "#00D4AD;" }}>ورود به ارشیو سریال ها</span></a>
+                                <Link href="/Serial">
+                                        <SubTitle NameTitle="ورود به ارشیو سریال ها" />
+                                </Link>
                         </div>
                 </>
         )

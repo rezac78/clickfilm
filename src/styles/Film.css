@@ -1,5 +1,19 @@
-/* Grouping */
+/* c */
+.TitleSub{
+        text-align: center;
+        background: #02e4cd;
+        width: auto;
+        padding: 1.5% 0;
+}
+.TitleSub span{
+        font-weight:bold;
+        font-size: 1.3em;
+        color: black;
+}
+/* c */
 
+
+/* Grouping */
 .Grouping{
         width: 100%;
 }

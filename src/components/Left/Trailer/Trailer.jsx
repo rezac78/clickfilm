@@ -1,11 +1,13 @@
+import SubTitle from '@/components/SubTitle/subTitle'
 import Image from 'next/image'
 import Link from 'next/link'
 export default function Trailer() {
         return (
                 <>
-                        <div className="textCollection text-center mt-2">
-                                <span>آخرین تریلرها</span>
+                        <div className="mt-2">
+                                <SubTitle NameTitle="آخرین تریلرها" />
                         </div>
+
                         <div className="trailer m-3">
                                 <Link href=""><Image width={500} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
                                 <div className="">
@@ -16,7 +18,9 @@ export default function Trailer() {
                                 </div>
                         </div>
                         <div className="text-center submit-one mt-3">
-                                <Link href="/Trailer"><span style={{ "color": "#00D4AD;" }}>ورود به ارشیو تریلرها</span></Link>
+                                <Link href="/Trailer">
+                                        <SubTitle NameTitle="ورود به ارشیو تریلرها" />
+                                </Link>
                         </div>
                 </>
         )
