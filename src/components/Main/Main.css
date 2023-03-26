@@ -124,14 +124,16 @@
 /* START Card Film */
 .Film-section{
         color:white;
-        display: flex;
         direction: rtl;
         margin: 5% 0%;
-        border-left: 5px dotted #04EEC8;
+        display: flex;
 }
 .Film-section .Film-section-Rigth{
-        width: 35%;
-        height: 100%;
+        width: 40%;
+}
+.Film-section .Film-section-Rigth img{
+        width: 100%;
+        height: 70%;
 }
 .Film-section .Film-section-Rigth:hover{
         box-shadow: 4px 4px 30px #00D4AD;
@@ -197,3 +199,68 @@
         font-weight: bold;       
 }
 /* END Card Film */
+@media screen and (max-width: 1480px){
+        .Film-section .Film-section-Left .Film-section-Information .Film-section-score {
+                font-size:0.6em;     
+        }
+        .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-TitleName a{
+                font-size: 1em;
+        }
+        .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB{
+                font-size: 0.8em;
+        }
+        .Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm{
+                font-size: 0.8em;
+        }
+        .Film-section-summary p{
+                font-size: 0.8em;
+        }
+}
+@media screen and (max-width: 728px){
+        .Film-section{
+                flex-wrap: wrap;
+        }
+        .Film-section .Film-section-Rigth {
+                position: relative;
+                right: 30%;
+                background-color: red;
+        }
+        .Film-section .Film-section-Rigth img{
+                width: 100%;
+                height: 100%;
+        }
+}
+@media screen and (max-width: 510px){
+        .Film-section .Film-section-Left .Film-section-Information .Film-section-score {
+                font-size:0.5em;     
+        }
+        .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-TitleName a{
+                font-size: 0.8em;
+        }
+        .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB{
+                font-size: 0.6em;
+        }
+        .Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm{
+                font-size: 0.6em;
+        }
+        .Film-section-summary p{
+                font-size: 0.6em;
+        }
+}
+@media screen and (max-width: 360px){
+        .Film-section .Film-section-Left .Film-section-Information .Film-section-score {
+                font-size:0.4em;     
+        }
+        .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-TitleName a{
+                font-size: 0.6em;
+        }
+        .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB{
+                font-size: 0.6em;
+        }
+        .Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm{
+                font-size: 0.6em;
+        }
+        .Film-section-summary p{
+                font-size: 0.6em;
+        }
+}

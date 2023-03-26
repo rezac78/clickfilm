@@ -5,7 +5,7 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                 <>
                         <div className="Film-section">
                                 <div className="Film-section-Rigth">
-                                        <Link href="/Download"><Image width={310} height={310} src={img} alt="poster-Film" /></Link>
+                                        <Link href="/Download"><Image width={600} height={100} src={img} alt="poster-Film" /></Link>
                                 </div>
                                 <div className="Film-section-Left">
                                         <div className="Film-section-headeTitle">
@@ -49,10 +49,8 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                                                         <span>میزان آرا : <big>{score2}</big></span>
                                                 </div>
                                         </div>
-                                        <div className="">
-                                                <div className="">
-                                                        <div className=""><p className="text-center">{summary}</p></div>
-                                                </div>
+                                        <div className="Film-section-summary">
+                                                <p className="text-center">{summary}</p>
                                         </div>
                                 </div>
                         </div>
