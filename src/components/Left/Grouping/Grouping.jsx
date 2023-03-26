@@ -4,7 +4,7 @@ import SubTitle from '@/components/SubTitle/subTitle'
 export default function Grouping() {
         return (
                 <>
-                        <div className="mt-2">
+                        <div className="mt-3">
                                 <SubTitle NameTitle="دسته بندی فیلم ها" />
                         </div>
                         <div className="Grouping">
@@ -16,7 +16,7 @@ export default function Grouping() {
                                         }
                                 </div>
                         </div>
-                        <div className="mt-2">
+                        <div className="mt-3">
                                 <SubTitle NameTitle="دسته بندی سریال ها" />
                         </div>
                         <div className="Grouping">

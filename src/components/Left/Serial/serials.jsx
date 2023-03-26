@@ -5,7 +5,7 @@ import Serial from '../../../components/Left/Serial/serial'
 export default function Serials() {
         return (
                 <>
-                        <div className="mt-2">
+                        <div className="mt-3">
                                 <SubTitle NameTitle="آخرین سریال ها" />
                         </div>
                         <div className="partserial">

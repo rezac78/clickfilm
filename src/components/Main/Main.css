@@ -53,10 +53,11 @@
         font-size: 0.85rem;
         text-decoration: none;
 }
-.trailer img{
+.trailerSection img{
         width: 100%;
+        height: auto;
 }
-.trailer img:hover{
+.trailerSection img:hover{
         filter: contrast(150%);
 }
 .serialpart2{

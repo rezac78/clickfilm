@@ -76,6 +76,7 @@
 /* Grouping */
 .Grouping{
         width: 100%;
+        height: 100%;
 }
 .GroupingMain{
         display: flex;
@@ -212,5 +213,29 @@
         }
         .containe .clip.clip10{
                 background-image: url(/img/postrs/10.jpg);
+        }
+}
+@media screen and (max-width: 1300px){
+        .GroupingOnce span{
+                font-size: 1.1rem;
+        }
+        .GroupingMain{
+                margin: 0px 0.5% 0px 0px;
+        }
+}
+@media screen and (max-width: 991px){
+        .GroupingOnce span{
+                font-size: 1.1rem;
+        }
+        .GroupingMain{
+                margin: 0px 16% 0px 0px;
+        }
+}
+@media screen and (max-width: 400px){
+        .GroupingOnce span{
+                font-size: 0.8rem;
+        }
+        .GroupingMain{
+                margin: 0px 0.5% 0px 0px;
         }
 }

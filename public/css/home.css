@@ -222,12 +222,7 @@ header .logo{
     font-size: 0.85rem;
     text-decoration: none;
 }
-.trailer img{
-    width: 100%;
-}
-.trailer img:hover{
-    filter: contrast(150%);
-}
+
 .serialpart2{
     position: relative;
     top: -1.5pc;

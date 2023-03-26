@@ -4,12 +4,12 @@ import Link from 'next/link'
 export default function Trailer() {
         return (
                 <>
-                        <div className="mt-2">
+                        <div className="mt-3">
                                 <SubTitle NameTitle="آخرین تریلرها" />
                         </div>
 
-                        <div className="Trailer m-3">
-                                <Link href=""><Image width={550} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
+                        <div className="trailerSection mt-3">
+                                <Link href=""><Image width={700} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
                                 <div className="">
                                         <div className="serialpart2">
                                                 <div className="right3"><span>the walking ded</span></div>

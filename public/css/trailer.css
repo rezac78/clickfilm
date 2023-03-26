@@ -50,7 +50,7 @@
     display: inline-block;
     padding: 10px 15px;
 }
-.trailer{
+/* .trailer{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -73,7 +73,7 @@
     position: relative;
     max-width: 900px;
     outline: none;
-}
+} */
 .close{
     position: absolute;
     top: 30px;
