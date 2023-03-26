@@ -1,3 +1,35 @@
+export const SerialsPartValues = [
+  {
+    id: 1,
+    image: "/img/home/left/film1/2.jpg",
+    name: "the walking ded",
+    PartSerial: "قسمت اخر فصل اول اضافه شد",
+  },
+  {
+    id: 2,
+    image: "/img/home/left/film1/4.jpg",
+    name: "the walking ded",
+    PartSerial: "قسمت اخر فصل اول اضافه شد",
+  },
+  {
+    id: 3,
+    image: "/img/home/left/film1/5.jpg",
+    name: "the walking ded",
+    PartSerial: "قسمت اخر فصل اول اضافه شد",
+  },
+  {
+    id: 4,
+    image: "/img/home/left/film1/6.jpg",
+    name: "the walking ded",
+    PartSerial: "قسمت اخر فصل اول اضافه شد",
+  },
+  {
+    id: 5,
+    image: "/img/home/left/film1/7.jpg",
+    name: "the walking ded",
+    PartSerial: "قسمت اخر فصل اول اضافه شد",
+  },
+];
 export const FilmValues = [
   {
     id: 1,

@@ -212,12 +212,6 @@ header .logo{
 .submit-one a{
     text-decoration: none;
 }
-.partserial img{
-    width: 100%;
-}
-.partserial img:hover{
-    filter: contrast(150%);
-}
 .serialpart{
     display: flex;
     justify-content: space-between;

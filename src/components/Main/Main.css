@@ -38,6 +38,7 @@
 }
 .partserial img{
         width: 100%;
+        height: 100%;
 }
 .partserial img:hover{
         filter: contrast(150%);
