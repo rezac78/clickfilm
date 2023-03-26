@@ -1,27 +1,16 @@
 .SmallSliderShow {
         width: 100%;
-        height: 320px;
+        height: auto;
         text-align: center;
+        margin-top: 2%;
 }
 .swiper-pagination-bullet-active {
         background-color: #04EEC8 !important;
-   }
-
-.SmallSliderShow2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 18px;
-        font-size: 22px;
-        font-weight: bold;
-        color: #fff;
 }
-
 .BigSliderShow {
         width: 100%;
-        height: 15%;
+        height: 14%;
 }
-
 .BigSliderShow2 {
         text-align: center;
         font-size: 18px;
@@ -32,10 +21,8 @@
 }
 
 .BigSliderShow2 img {
-        display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;
 }
 
 .BigSliderShow2 .title {
@@ -46,7 +33,60 @@
         background-color: #111111d8;
         width: 100%;
 }
+.BigSliderShow2 .title img {
+        height: 80vh;
+        background-size: cover;
+}
 
 .PartTitle a{
         text-decoration: none ;
+}
+
+@media screen and (max-width: 991px){
+        .BigSliderShow {
+                width: auto;
+                height: 12%;
+        }
+        .BigSliderShow2 .title img {
+                height: 40vh;
+                width: 100%;
+                background-size: cover;
+        }
+        .BigSliderShow2 .title {
+                font-size: 27px;
+                font-weight: 300;
+        }
+}
+@media screen and (max-width: 576px){
+        .BigSliderShow {
+                width: 100%;
+                height: 10%;
+        }
+        .BigSliderShow2 .title img {
+                height: 28vh;
+                width: 100%;
+                background-size: cover;
+        }
+        .BigSliderShow2 .title {
+                font-size: 21px;
+                font-weight: 300;
+        }
+        .SmallSliderShow2 img {
+                width: 70%;
+                height: 30vh;
+        }
+}
+@media screen and (max-width: 450px){
+        .BigSliderShow {
+                width: 100%;
+                height: 9%;
+        }
+        .BigSliderShow2 .title img {
+                height: 28vh;
+                width: 100%;
+                background-size: cover;
+        }
+        .BigSliderShow2 .title {
+                font-size: 17px;
+        }
 }

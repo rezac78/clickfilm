@@ -184,11 +184,7 @@ header .logo{
 }
 /* header end */
 /* main start */
-.fullpart{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-}
+
 .card{
     position: relative;
     width: 600px;

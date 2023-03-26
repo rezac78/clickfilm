@@ -36,14 +36,3 @@
         max-width: 90%;
         }
 }
-@media screen and (min-width: 60px) and (max-width: 540px){
-        .banner .content h2{
-        padding: 0px 10px;
-        }
-        .banner .content p{
-        padding: 0px 10px;
-        }
-        .banner .content a{
-        margin: 0px 10px;
-        }
-}

@@ -16,23 +16,21 @@ export default function Main() {
                 <>
                         <section className='AllMain'>
                                 <div className="class">
-                                        <main className="fullpart">
+                                        <main className="">
                                                 <div className="row">
                                                         <div className="col-lg-4 col-md-12" style={{ "background": "#20242C" }}>
                                                                 <div className="container">
-                                                                        <div className="partone">
-                                                                                <section>
-                                                                                        <Section />
-                                                                                        <NewSection />
-                                                                                        <Serial />
-                                                                                        <TrailerPart />
-                                                                                        <Grouping />
-                                                                                </section>
+                                                                        <div>
+                                                                                <Section />
+                                                                                <NewSection />
+                                                                                <Serial />
+                                                                                <TrailerPart />
+                                                                                <Grouping />
                                                                         </div>
                                                                 </div>
                                                         </div>
                                                         <div className="col-lg-8 col-md-12" style={{ "background": "#20242C" }}>
-                                                                <Search/>
+                                                                <Search />
                                                                 {
                                                                         router.route == "/" ? <SliderShow /> : null
                                                                 }
