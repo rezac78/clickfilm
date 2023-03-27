@@ -136,6 +136,9 @@ header .logo{
         transform: scale(0);
         transform-origin:left;
 }
+.content{
+        width: 100%;
+}
 .content .contentBx
 {
         max-width: 600px;
@@ -146,8 +149,6 @@ header .logo{
         font-size: 1.2rem;
         text-align: right;
 }
-
-
 .content .imgBx{
         margin: 0% 8%;
 }
@@ -207,6 +208,28 @@ header .logo{
         width: 100%;
 }
 /* ALL RESPONCEV */
+@media screen and (max-width: 1000px){
+        .content .contentBx
+        {
+                max-width: 900px;
+        }
+        .content .contentBx p
+        {
+                color: #4CD5AE;
+                font-size: 1rem;
+                text-align: center;
+        } 
+        .content .imgBx img{
+                height: 70vh;
+        }
+        .content{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+                top: 5pc;
+        }
+}
 @media screen and (max-width: 576px){
         .content .contentBx p
         {
@@ -228,7 +251,7 @@ header .logo{
                 font-size: 0.7rem;
         } 
         .content .imgBx img{
-                height: 50vh;
+                height: 60vh;
         }
         header .logo {
                 font-size: 1.2em;

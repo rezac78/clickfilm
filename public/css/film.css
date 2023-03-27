@@ -142,14 +142,7 @@ header .logo{
     transform: scale(0);
     transform-origin:left;
 }
-.content .contentBx
-{
-    max-width: 600px;
-}
-.content .contentBx img
-{
-    max-width: 400px;
-}
+
 
 .content .imgBx img{
     max-width: 50%;
@@ -441,23 +434,7 @@ header .logo{
         width: 80px;
         height: 60px;
     }
-    .content{
-        flex-direction: column-reverse;
-        margin: 50px 0;
-    }
-    .content .contentBx{
-        max-width: 100%;
-    }
-    .content .imgBx img{
-        max-width: 100%;
-        min-width: 300px;
-    }
-    .content .contentBx h2{
-        font-size: 2.5em;
-        line-height: 1em;
-        color: #fff;
-        text-transform: uppercase;
-    }
+
 }
 @media screen and (min-width: 60px) and (max-width: 1245px){
     .s1 span{
