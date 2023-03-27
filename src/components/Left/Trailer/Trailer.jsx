@@ -18,7 +18,7 @@ export default function Trailer() {
                                 </div>
                         </div>
                         <div className="text-center submit-one mt-3">
-                                <Link href="/Trailer">
+                                <Link href="/Trailers">
                                         <SubTitle NameTitle="ورود به ارشیو تریلرها" />
                                 </Link>
                         </div>
