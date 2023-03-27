@@ -1,50 +1,59 @@
-.CardSerial-Link{
+.CardSerial a{
         text-decoration: none;
         color: black;
 }
+.CardSerial a:hover{
+        color: black;
+}
 .PartCard{
+        width: 100%;
+}
+.CardSerial{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
 }
-.CardSerial{
+.CartSerialAll{
         width: 40%;
         height: auto;
-        background:white;
+        background:#EEEEEE;
         margin: 3% 0;
 }
-.CardSerial-Down{
-        padding: 0% 0px;
-        background-color: #a2a4a7d7;
+.CardSerial img{
+        width: 100%;
+        height: 70%;
 }
-.CardSerial-UP .imgcaver{
-        display:flex;
-        justify-content: space-between;
-        padding: 0px 10px;
-        background-color: #a2a4a7d7;
-}
-.CardSerial-UP .imgcaver .star{
-        color: gold;
-}
-.CardSerial-UP .imgcaver .star span{
-        color: black;
-}
-.CardSerial-Down .cardtitle{
-        display:flex;
-        justify-content: space-between;
-        padding: 0px 10px;
-}
-.CardSerial-Down .cardtitle2{
-        display:flex;
-        justify-content: space-between;
-        padding: 0px 10px;
-}
-.CardSerial-UP .overlay .text {
+.CardSerial p {
         color: black;
         font-weight: bold;
         padding: 1% 15px;
-        text-align: right;
+        text-align: center;
 }
+.CardSerial .imgcaver{
+        display:flex;
+        justify-content: space-between;
+        padding: 1% 1%;
+        background-color: #363739;
+        color: white;
+}
+.CardSerial .imgcaver .star{
+        color: gold;
+}
+.CardSerial .imgcaver .star span{
+        color: white;
+        padding: 0px 7px;
+}
+.CardSerial .cardtitle{
+        display:flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+}
+.CardSerial .cardtitle2{
+        display:flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+}
+
 .serialpart{
         display: flex;
         justify-content: space-between;
@@ -84,142 +93,24 @@
 /* part 2 end */
 /* main end */
 
-@media (max-width:991px)
-{
-        header{
-        padding: 20px 40px;
+@media screen and (max-width: 1400px){
+        .CardSerial p {
+                padding: 1% 15px;
+                font-size: 0.8rem;
         }
-        .banner{
-        padding: 40px;
-        overflow: hidden;
+        .CardSerial .imgcaver{
+                font-size: 0.8rem;
         }
-        .banner::before{
-        top: 100px;
-        left: 0;
-        width: 170px;
-        height: 310px;
+        .CardSerial .cardtitle{
+                font-size: 0.8rem;
         }
-        .banner::after{
-        bottom: 0;
-        right: 0;
-        width: 80px;
-        height: 60px;
-        }
-        .content{
-        flex-direction: column-reverse;
-        margin: 50px 0;
-        }
-        .content .contentBx{
-        max-width: 100%;
-        }
-        .content .imgBx img{
-        max-width: 100%;
-        min-width: 300px;
-        }
-        .content .contentBx h2{
-        font-size: 2.5em;
-        line-height: 1em;
-        color: #fff;
-        text-transform: uppercase;
+        .CardSerial .cardtitle2{
+                font-size: 0.8rem;
         }
 }
-@media screen and (min-width: 60px) and (max-width: 1516px){
-        .text {
-        font-size: 0.9rem;
-        top: 30%;
-        left: 0%;
-        transform: translate(-1%, -85%);
-        text-align: right;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 1365px){
-        .text {
-        font-size: 0.9rem;
-        top: 40%;
-        left: 0%;
-        transform: translate(-1%, -85%);
-        text-align: right;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 1103px){
-        .text {
-        font-size: 0.9rem;
-        top: 50%;
-        left: 0%;
-        transform: translate(-1%, -85%);
-        text-align: right;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 1245px){
-        .s1 span{
-        color: white;
-        font-weight: 700;
-        font-size: 0.8rem;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 1082px){
-        .mton4{
-        font-size: 0.8rem;
-        font-weight: 650;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 1061px){
-        .s1 span{
-        color: white;
-        font-weight: 650;
-        font-size: 0.70rem;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 992px){
-        .poster-film img{
-        width: 32%;
-        height: 35vh;
-        }
-        .text {
-        font-size: 0.9rem;
-        top: 20%;
-        left: 0%;
-        transform: translate(-1%, -85%);
-        text-align: right;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 768px){
-        .text {
-        font-size: 0.9rem;
-        top: 30%;
-        left: 0%;
-        transform: translate(-1%, -85%);
-        text-align: right;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 769px){
-        .poster-film img{
-        width: 31%;
-        height: 18vh;
-        }
-        .d{
-        text-align: center;
-        }
-        .s2{
-        display: none;
-        }
-        .se2{
-        display: none;
-        }
-        .s1 span{
-        font-weight: 700;
-        font-size: 1.07rem;
-        }
-        .pop{
-        padding: 10px 45px;
-        }
-        .mton4{
-        font-size: 0.9rem;
-        font-weight: 700;
-        }
-        .poster-film img{
-        width: 32%;
-        height: 35vh;
+@media screen and (max-width: 670px){
+        .CartSerialAll{
+                width: 90%;
         }
 }
 
@@ -239,101 +130,4 @@
         .containe .clip.clip5{
         background-image: url(/img/postrs/10.jpg);
         }
-}
-@media screen and (min-width: 60px) and (max-width: 528px){
-        .mton4{
-        font-size: 0.8rem;
-        font-weight: 700;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 485px){
-        .mton4{
-        font-size: 0.7rem;
-        font-weight: 600;
-        }
-        .ses3 p{
-        font-size: 0.9em;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 451px){
-        .text {
-        color: white;
-        font-size: -2.1rem;
-        font-weight: bold;
-        position: absolute;
-        top: 55%;
-        left: 0%;
-        transform: translate(-1%, -85%);
-        text-align: right;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 430px){
-        .mton4{
-        font-size: 0.6rem;
-        font-weight: 600;
-        }
-        .poster-film img{
-        width: 32%;
-        height: 30vh;
-        }
-        .postrs img{
-        height: 50vh;
-        }
-        .postrs span{
-        display: none;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 416px){
-        .ses3 p{
-        font-size: 0.8em;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 401px){
-        .s1 span{
-        font-weight: 700;
-        font-size: 0.9rem;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 389px){
-        .mton4{
-        font-size: 0.55rem;
-        font-weight: 400;
-        }
-        .postrs img{
-        height: 45vh;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 361px){
-        .mton4{
-        font-size: 0.5rem;
-        font-weight: 400;
-        }
-        .s1 span{
-        font-weight: 700;
-        font-size: 0.8rem;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 350px){
-        .text-one{
-        font-size: 0.9em;
-        }
-        .poster-film img{
-        width: 32%;
-        height: 25vh;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 342px){
-        .mton4{
-        font-size: 0.45rem;
-        font-weight: 300;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 321px){
-        .sci li a img{
-        width: 50px;
-        }
-        .postrs img{
-        height: 40vh;
-        }
-
 }

@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import Section from '../Left/Sections/section';
 import NewSection from '../Left/NewSection/newsection';
 import Serial from '../Left/Serial/serials';
-import SerialPart from '../Right/Serial/Serial';
+import SerialPart from '../Right/Serial/Serials';
 import TrailerPart from '../Left/Trailer/Trailer';
 import Grouping from '../Left/Grouping/Grouping';
 import SliderShow from '../Right/SliderShow/Slider';
