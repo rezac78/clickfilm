@@ -27,7 +27,7 @@ export default function Download() {
                                                                 <div className="main">
                                                                         <div className="Main-Download">
                                                                                 <div className="part1">
-                                                                                        <div className="name-part ">
+                                                                                        <div className="name-part">
                                                                                                 <span>دانلود فیلم Fear of Rain 2021</span>
                                                                                         </div>
                                                                                         <div className="collaction-part">
@@ -82,7 +82,7 @@ export default function Download() {
                                                                                                 <div className="user-info">
                                                                                                         <div className="img-name">
                                                                                                                 <i onClick={handleClick} className={`fas fa-chevron-${isActive ? "up" : "down"}`}></i>
-                                                                                                                <span style={{ "fontWeight": "bold", "padding": "10px 0px" }}>لینک های دانلود زبان اصلی</span>
+                                                                                                                <span style={{ "fontWeight": "bold"}}>لینک های دانلود زبان اصلی</span>
                                                                                                         </div>
                                                                                                         <div className={isActive ? "DownloadDetails" : "DownloadDetailsOff"}>
                                                                                                                 <div className="main-link text-center">
@@ -96,28 +96,15 @@ export default function Download() {
                                                                                         </div>
                                                                                         <div className="container mt-4">
                                                                                                 <div style={{ "backgroundColor": "#E74D3D", "color": "white;" }} className="user-info2">
-                                                                                                        <div className="img-name2">
+                                                                                                        <div className="img-name">
                                                                                                                 <i onClick={handleClick2} className={`fas fa-chevron-${isActive2 ? "up" : "down"}`}></i>
-                                                                                                                <span style={{ "fontWeight": "bold", "padding": "10px 0px;" }}>لینک های دانلود دوبله</span>
+                                                                                                                <span style={{ "fontWeight": "bold"}}>لینک های دانلود دوبله</span>
                                                                                                         </div>
                                                                                                         <div className={isActive2 ? "DownloadDetails" : "DownloadDetailsOff"}>
                                                                                                                 <div className="main-link text-center">
                                                                                                                         <i className="fas fa-cloud-download-alt"><span>کیفیت : <big>BluRay 1080p</big>== <small>انگورد :<span>RARBG</span>==</small><span>حجم : <span> 2.07 GB</span></span></span></i>
                                                                                                                 </div>
                                                                                                                 <div className="buttom-link">
-                                                                                                                        <a href=""><button>کلیک کنید</button></a>
-                                                                                                                </div>
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                        </div>
-                                                                                        <div className="container mt-4">
-                                                                                                <div style={{ "backgroundColor": "#7B57E2", "color": "white;" }} className="user-info3">
-                                                                                                        <div className="img-name3">
-                                                                                                                <i onClick={handleClick3} className={`fas fa-chevron-${isActive3 ? "up" : "down"}`}></i>
-                                                                                                                <span style={{ "fontWeight": "bold", "padding": "10px 0px" }}>لینک های دانلود زیرنویس</span>
-                                                                                                        </div>
-                                                                                                        <div className={isActive3 ? "DownloadDetails" : "DownloadDetailsOff"}>
-                                                                                                                <div className="buttom-link2">
                                                                                                                         <a href=""><button>کلیک کنید</button></a>
                                                                                                                 </div>
                                                                                                         </div>

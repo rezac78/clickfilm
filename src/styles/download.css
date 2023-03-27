@@ -89,16 +89,30 @@
 /* main start */
 
 .video{
-        position: relative;
         display: flex;
+        width: 100%;
+        height: 100%;
 }
-
-.video img{
+.video .clipDown{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+.video .clipDown.clip16
+{
+        background-image: url("/img/2.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
 }
 .video .sphere{
         position: absolute;
-        width: 400px;
-        height: 300px;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 250px;
         border-radius: 0%;
         z-index: 10;
 }
@@ -107,7 +121,7 @@
         position: absolute;
         bottom: -50px;
         left: -50px;
-        width: 500px;
+        width: 450px;
         height: 80px;
         border-radius: 50%;
         background: radial-gradient(white,transparent,transparent);
@@ -259,7 +273,7 @@
 .DownloadDetails{
         display: flex;
         justify-content: space-between;
-        padding: 5px 10px;
+        padding: 25px 0px;
 }
 .DownloadDetailsOff{
         display: none;
@@ -309,12 +323,6 @@
         font-size: 1.2rem;
         font-weight: bold;
 }
-.buttom-link{
-        margin: 0px 0px;
-}
-
-
-
 .user-info2{
         background-color: #282C33;
         color: #04EEC8;
@@ -348,202 +356,104 @@
         padding: 5px 10px;
         text-align: center;
 }
-
-
 /* part 2 end */
 /* main end */
-
-@media (max-width:991px)
+@media screen and (max-width:1200px)
+{
+        .DownloadDetails{
+                font-size: 0.8rem;
+        }
+}
+@media screen and (max-width:991px)
 {
         header{
-        padding: 20px 40px;
+                padding: 20px 40px;
         }
         .banner{
-        overflow: hidden;
+                overflow: hidden;
         }
-
-}
-
-@media screen and (min-width: 60px) and (max-width: 1245px){
-
-}
-@media screen and (min-width: 60px) and (max-width: 1082px){
-
-}
-@media screen and (min-width: 60px) and (max-width: 1061px){
-
-}
-@media screen and (min-width: 60px) and (max-width: 991px){
-        .main-link i{
-        color: black;
-        font-size: 1em;
+        .DownloadDetails{
+                display: flex;
+                flex-wrap: wrap;
         }
-        .main-link span{
-        padding: 0px 5px;
-        font-size: 1em;
-        }
-        .main-link big{
-        padding: 0px 5px;
-        font-size: 1em;
-        }
-        .main-link small{
-        padding: 0px 5px;
-        font-size: 1em;
-        }
-        .main-link small span{
-        padding: 0px 5px;
-        font-size: 1em;
-        }
-        .main-link span h4{
-        display: flex;
-        padding: 0px 5px;
-        font-size: 1em;
-        }
-        .buttom-link a button{
-        color: white;
-        background:linear-gradient(#E74D3D,#7B57E2,#3598DB);
-        padding: 7px 10px;
-        border-radius: 50px;
+        .buttom-link{
+                position: relative;
+                left: 40%;
+                margin-top: 25px;
         }
 }
-@media screen and (min-width: 60px) and (max-width: 909px){
-
-}
-@media screen and (min-width: 60px) and (max-width: 769px){
-        .video .sphere video{
-        width: 80%;
+@media screen and (max-width: 769px){
+        .video .sphere{
+                left: 0;
+                width: 300px;
+                height: 200px;
         }
         .video .sphere::after{
-        content: '';
-        position: absolute;
-        bottom: -50px;
-        left: -50px;
-        width: 650px;
-        height: 100px;
-        border-radius: 50%;
-        background: radial-gradient(white,transparent,transparent);
-        z-index: -1;
+                width: 400px;
+                height: 70px;
+        }
+        .part1{
+                font-size: 1rem;
+        }
+        .part2{
+                font-size: 0.8em;
+        }
+        .part3{
+                font-size: 0.8em; 
+        }
+        .DownloadDetails{
+                font-size: 0.6rem;
         }
 }
-@media screen and (min-width: 60px) and (max-width: 566px){
-        .video .sphere video{
-        width: 58%;
+@media screen and (min-width: 60px) and (max-width: 530px){
+        .video .sphere{
+                left: 0;
+                width: 200px;
+                height: 150px;
         }
         .video .sphere::after{
-        content: '';
-        position: absolute;
-        bottom: -50px;
-        left: -50px;
-        width: 550px;
-        height: 100px;
-        border-radius: 50%;
-        background: radial-gradient(white,transparent,transparent);
-        z-index: -1;
+                width: 300px;
+                height: 70px;
         }
 }
-@media screen and (min-width: 60px) and (max-width: 502px){
+@media screen and (max-width: 465px){
         .part1{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 18px;
-        font-size: 1rem;
+                font-size: 0.8rem;
         }
-        .country-part i{
-        display: none;
+        .part2{
+                font-size: 0.6em;
         }
-        .country-part span{
-        display: none;
+        .part3{
+                font-size: 0.6em; 
         }
-        .pay-part i{
-        display: none;
+        .DownloadDetails{
+                font-size: 0.5rem;
         }
-        .pay-part span{
-        display: none;
+        .buttom-link{
+                position: relative;
+                left: 35%;
         }
 }
-@media screen and (min-width: 60px) and (max-width: 425px){
-        .video .sphere video{
-        width: 40%;
-        height: 69%;
-        }
-        .video .sphere::after{
-        content: '';
-        position: absolute;
-        bottom: 50px;
-        left: -50px;
-        width: 400px;
-        height: 100px;
-        border-radius: 50%;
-        background: radial-gradient(white,transparent,transparent);
-        z-index: -1;
-        }
+@media screen and (max-width: 360px){
         .part1{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 7px;
-        font-size: 0.9rem;
+                font-size: 0.65rem;
         }
-
-}
-@media screen and (min-width: 60px) and (max-width: 416px){
-
-}
-@media screen and (min-width: 60px) and (max-width: 401px){
-
-}
-@media screen and (min-width: 60px) and (max-width: 394px){
-        .number-part span{
-        color: white;
-        font-size: 1.1em;
+        .part2{
+                font-size: 0.5em;
         }
-        .number-part small{
-        color: #08FFFF;
-        font-size: 1em;
+        .part3{
+                font-size: 0.5em; 
         }
-        .number-part big{
-        font-size: 1em;
+        .img-name{
+                font-size: 0.6em; 
         }
-        .age-part span{
-        color: white;
-        font-size: 1.1em;
+        .buttom-link{
+                position: relative;
+                left: 28%;
         }
 }
-@media screen and (min-width: 60px) and (max-width: 365px){
-        .part1{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 7px;
-        font-size: 0.8rem;
-        }
-}
-@media screen and (min-width: 60px) and (max-width: 360px){
-        .number-part span{
-        color: white;
-        font-size: 1em;
-        }
-        .number-part small{
-        color: #08FFFF;
-        font-size: 0.9em;
-        }
-        .number-part big{
-        font-size: 0.9em;
-        }
-        .age-part span{
-        color: white;
-        font-size: 1em;
-        }
-        .age-part big{
-        font-size: 0.9em;
-        }
-        
-}
-@media screen and (min-width: 60px) and (max-width: 342px){
-}
-@media screen and (min-width: 60px) and (max-width: 328px){
-        .part1{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 7px;
-        font-size: 0.75rem;
+@media screen and (min-width: 60px) and (max-width: 850px){
+        .video .clipDown.clip16{
+                background-image: url("/img/12.jpeg");
         }
 }

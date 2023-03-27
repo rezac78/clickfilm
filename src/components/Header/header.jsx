@@ -80,14 +80,14 @@ export default function Header() {
                                                                                                         <div className="clip clip10"></div>
                                                                                                 </div> :
                                                                                                 router.route == "/Download" ?
-                                                                                                        <section className="video">
-                                                                                                                <Image width={1700} height={700} src="/img/2.jpg" alt="" />
+                                                                                                        <div className="video">
+                                                                                                                <div className="clipDown clip16"></div>
                                                                                                                 <div className="sphere">
                                                                                                                         <video loop muted autoPlay >
                                                                                                                                 <source type="video/webm" src="/video/4.mp4" />
                                                                                                                         </video>
                                                                                                                 </div>
-                                                                                                        </section> :
+                                                                                                        </div> :
                                                                                                         null
                                 }
                                 <ul className="sci">

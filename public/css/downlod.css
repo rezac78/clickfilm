@@ -419,39 +419,7 @@ header .logo{
 @media screen and (min-width: 60px) and (max-width: 1061px){
 
 }
-@media screen and (min-width: 60px) and (max-width: 991px){
-    .main-link i{
-        color: black;
-        font-size: 1em;
-    }
-    .main-link span{
-        padding: 0px 5px;
-        font-size: 1em;
-    }
-    .main-link big{
-        padding: 0px 5px;
-        font-size: 1em;
-    }
-    .main-link small{
-        padding: 0px 5px;
-        font-size: 1em;
-    }
-    .main-link small span{
-        padding: 0px 5px;
-        font-size: 1em;
-    }
-    .main-link span h4{
-        display: flex;
-        padding: 0px 5px;
-        font-size: 1em;
-    }
-    .buttom-link a button{
-        color: white;
-        background:linear-gradient(#E74D3D,#7B57E2,#3598DB);
-        padding: 7px 10px;
-        border-radius: 50px;
-    }
-}
+
 @media screen and (min-width: 60px) and (max-width: 909px){
 
 }
