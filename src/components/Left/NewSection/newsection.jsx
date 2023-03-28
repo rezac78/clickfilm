@@ -19,22 +19,22 @@ export default function NewSection() {
                                 }}
                         >
                                 <SwiperSlide className="SmallSliderShow2">
-                                        <Link href="/Film"><Image width={250} height={350} src="/img/home/left/film1/1.jpg" alt="" /></Link>
+                                        <Link href="/Film" aria-label="Read more about Seminole tax hike"><Image width={250} height={350} src="/img/home/left/film1/1.jpg" alt="" /></Link>
                                 </SwiperSlide>
                                 <SwiperSlide className="SmallSliderShow2">
-                                        <Link href="/Film"><Image width={250} height={350} src="/img/film/1.jpg" alt="" /></Link>
+                                        <Link href="/Film" aria-label="Read more about Seminole tax hike"><Image width={250} height={350} src="/img/film/1.jpg" alt="" /></Link>
                                 </SwiperSlide>
                                 <SwiperSlide className="SmallSliderShow2">
-                                        <Link href="/Film"><Image width={250} height={350} src="/img/film/3.jpg" alt="" /></Link>
+                                        <Link href="/Film" aria-label="Read more about Seminole tax hike"><Image width={250} height={350} src="/img/film/3.jpg" alt="" /></Link>
                                 </SwiperSlide>
                                 <SwiperSlide className="SmallSliderShow2">
-                                        <Link href="/Film"><Image width={250} height={350} src="/img/home/left/film1/1.jpg" alt="" /></Link>
+                                        <Link href="/Film" aria-label="Read more about Seminole tax hike"><Image width={250} height={350} src="/img/home/left/film1/1.jpg" alt="" /></Link>
                                 </SwiperSlide>
                                 <SwiperSlide className="SmallSliderShow2">
-                                        <Link href="/Film"><Image width={250} height={350} src="/img/film/1.jpg" alt="" /></Link>
+                                        <Link href="/Film" aria-label="Read more about Seminole tax hike"><Image width={250} height={350} src="/img/film/1.jpg" alt="" /></Link>
                                 </SwiperSlide>
                                 <SwiperSlide className="SmallSliderShow2">
-                                        <Link href="/Film"><Image width={250} height={350} src="/img/film/3.jpg" alt="" /></Link>
+                                        <Link href="/Film" aria-label="Read more about Seminole tax hike"><Image width={250} height={350} src="/img/film/3.jpg" alt="" /></Link>
                                 </SwiperSlide>
                         </Swiper>
                         <div className="mt-3 PartTitle">

@@ -21,7 +21,7 @@ export default function Trailer({ poster, summary, name, videoPart }) {
                                         <video ref={vidRef} controls={true}>
                                                 <source type="video/webm" src={videoPart} />
                                         </video>
-                                        <Image width={500} height={50} src="/img/close.png" className="close" onClick={handleClick} alt="close" />
+                                        <Image width={100} height={10} src="/img/close.png" className="close" onClick={handleClick} alt="close" />
                                 </div>
                         </div>
                 </>

@@ -1,12 +1,12 @@
 .card-cantainer{
         display: flex;
         flex-wrap: wrap;
-        background-color: var(--backgroundPart);
+        background-color: var(--backgroundAll);
 }
 .card{
         position: relative;
         width: 31%;
-        height: auto;
+        height: 100%;
         margin: 4% 1%;
         display: flex;
         align-items: center;
@@ -18,12 +18,13 @@
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        width: 100%;
+        width: auto;
         transition: 0.5s;
 }
 .card:hover img{
         left: 80%;
-        height: 400px;
+        height: 120%;
+        width: 100%;
 }
 .card .card-content{
         position: relative;
@@ -82,15 +83,6 @@
 
 /* part 2 end */
 /* main end */
-@media (max-width:420px){
-        .card .content{
-        padding: 30px;
-        }
-        .card:hover img{
-        height: 300px;
-        }
-}
-
 @media screen and (max-width: 1400px){
         .card img{
                 height: 90%;
@@ -98,7 +90,7 @@
         }
         .card:hover img{
                 left: 80%;
-                height: 350px;
+                height: 110%;
         }
         .card .card-content h2{
                 font-size: 1.8em;
@@ -117,10 +109,12 @@
         }
         .card img{
                 height: 80%;
+                width: 90%;
         }
         .card:hover img{
                 left: 75%;
-                height: 350px;
+                height: 90%;
+                width: 90%;
         }
 }
 @media screen and (max-width: 860px){
@@ -131,21 +125,22 @@
         }
         .card img{
                 height: 90%;
-                width: 90%;
+                width: 70%;
         }
         .card:hover img{
                 left: 80%;
-                height: 350px;
+                height: 110%;
+                width: 70%;
         }
 }
 @media screen and (max-width: 480px){
         .card img{
                 height: 85%;
-                width: 85%;
+                width: auto;
         }
         .card:hover img{
                 left: 80%;
-                height: 280px;
+                height: 130%;
         }
         .card .card-content h2{
                 font-size: 1.5em;
@@ -153,19 +148,27 @@
         }
         .card .card-content p{
                 color: #fff;
-                font-size: 0.6em;
+                font-size: 0.75em;
         }
         .card .card-content a{
                 padding: 7px 15px;
         }
 }
+@media (max-width:420px){
+        .card .content{
+        padding: 30px;
+        }
+        .card:hover img{
+                height: 120%;
+        }
+}
 @media screen and (max-width: 350px){
         .card img{
                 height: 70%;
-                width: 90%;
+                width:auto;
         }
         .card:hover img{
                 left: 80%;
-                height: 250px;
+                height: 110%;
         }
 }

@@ -9,7 +9,7 @@ export default function Card({ poster, summary, name }) {
                                         <p className="">{summary}</p>
                                         <Link href="/Download">دانلود فیلم</Link>
                                 </div>
-                                <Image width={500} height={100} src={poster} alt="" className="award-img" />
+                                <Image width={600} height={100} src={poster} alt="Poster" className="award-img" />
                         </div>
                 </>
         )

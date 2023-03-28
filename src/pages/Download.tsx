@@ -74,7 +74,7 @@ export default function Download() {
                                                                                         </div>
                                                                                 </div>
                                                                         </div>
-                                                                        <div style={{ "cursor": "pointer;" }} className="part4">
+                                                                        <div className="part4">
                                                                                 <div className="link">
                                                                                         <span>لینک های دانلود</span>
                                                                                 </div>

@@ -9,7 +9,7 @@ export default function Trailer() {
                         </div>
 
                         <div className="trailerSection mt-3">
-                                <Link href=""><Image width={700} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
+                                <Link href="/Trailers" aria-label="Read more about Seminole tax hike"><Image width={700} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
                                 <div>
                                         <div className="serialpart2">
                                                 <div className="right3"><span>the walking ded</span></div>

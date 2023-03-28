@@ -63,6 +63,7 @@
         opacity: 1;
 }
 .trailer.active img{
+        width: 3%;
         height: 5%;
 }
 .trailer video{
@@ -76,7 +77,8 @@
         right: 30px;
         cursor: pointer;
         filter: invert(1);
-        max-width: 32px;
+        max-width: 256px;
+        max-height: 256px;
 }
 @media (max-width:991px)
 {
