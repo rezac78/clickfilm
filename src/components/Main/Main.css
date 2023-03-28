@@ -1,11 +1,9 @@
 
 .AllMain{
-        background:#111111;
+        background:var(--backgroundPart);
 }
-
-.textCollection span{
-        color: #00D4AD;
-        font-size: 1.2rem;
+.PartLeft-Style{
+        padding:0px 2% !important;
 }
 .text-one{
         cursor: pointer;
@@ -14,7 +12,6 @@
         text-decoration: none;
 }
 .fil{
-        color: red;
         font-size: 1.1rem;
         padding: 10px 5px;
 }
@@ -26,12 +23,6 @@
 }
 .poster-film img:hover{
         opacity: 0.7;
-}
-.submit-one{
-        border: 2px solid #173D41;
-        background-color: #173D41;
-        cursor: pointer;
-        height: 5vh;
 }
 .submit-one a{
         text-decoration: none;
@@ -49,7 +40,7 @@
         cursor: pointer;
 }
 .serialpart a{
-        color: #00D4AD;
+        color: var(--Colorbackground);
         font-size: 0.85rem;
         text-decoration: none;
 }
@@ -65,59 +56,14 @@
         top: -1.5pc;
         display: flex;
         justify-content: space-between;
-        color: #00D4AD;
+        color: var(--Colorbackground);
         font-size: 0.85rem;
         cursor: pointer;
 }
-.list ul li span{
-        color: #00D4AD;
-}
-.list ul li a{
-        text-decoration: none;
-}
-.list ul li{
-        font-size: 1rem;
-}
-.class{
-        padding: 0 1%;
-        background-color: #111111;
-}
 /* part 2 start */
-.postrs span{
-        font-size: 1.2rem;
-        color: #04EEC8;
-        border: 2px solid #111111;
-        background-color: #111111d8;
-}
-.postrs img{
-        height: 70vh;
-}
 .img-name{
         display: flex;
         justify-content: space-between;
-}
-.details{
-        display: flex;
-        justify-content: space-between;
-        margin: 15px 15px;
-}
-.listdata{
-        border: 1px solid black;
-        padding: 15px 15px;
-        
-}
-.listdata input{
-        background-color: #282C33;
-        border: none;
-        outline: none;
-}
-.details input{
-        border-radius: 45px;
-        background-color: #20242C;
-        color: #04EEC8;
-        margin-top: 7px;
-        text-align: center;
-        outline: none;
 }
 .reza{
         display: flex;
@@ -129,16 +75,20 @@
         direction: rtl;
         margin: 5% 0%;
         display: flex;
+        border-left: 5px dotted var(--ColorPartBorder);
+        width: 100%;
 }
 .Film-section .Film-section-Rigth{
-        width: 40%;
+        width: 20%;
+        height: 100%;
+        /* margin-right: 3%; */
 }
-.Film-section .Film-section-Rigth img{
+.Film-section .Film-section-Rigth .ImageBg img{
         width: 100%;
-        height: 70%;
+        height: 100%;
 }
 .Film-section .Film-section-Rigth:hover{
-        box-shadow: 4px 4px 30px #00D4AD;
+        box-shadow: 4px 4px 30px var(--ColorPartBorder);
 }
 .Film-section .Film-section-Left{
         width: 100%;
@@ -163,7 +113,7 @@
 }
 .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB span{
         padding: 0px 0px 0px 5px;
-        color:  #00D4AD;
+        color:  var(--Colorbackground);
 }
 .Film-section .Film-section-Left .Film-section-headeTitle .Film-section-IMDB small{
         color:  white;
@@ -190,11 +140,11 @@
 }
 .Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm i{
         padding: 0px 0px 0px 10px;
-        color:  #00D4AD;
+        color:  var(--Colorbackground);
 }
 .Film-section .Film-section-Left .Film-section-Information .Film-section-TitleFilm .Film-section-TitleFilm-genre{
         padding: 0px 0px 0px 7px;
-        color:  #00D4AD;
+        color:  var(--Colorbackground);
 }
 .Film-section .Film-section-Left .Film-section-Information .Film-section-score {
         font-size:0.8em;
@@ -225,11 +175,15 @@
         .Film-section .Film-section-Rigth {
                 position: relative;
                 right: 30%;
-                background-color: red;
         }
-        .Film-section .Film-section-Rigth img{
-                width: 100%;
+        .Film-section .Film-section-Rigth{
+                width: 35%;
                 height: 100%;
+        }
+}
+@media screen and (max-width: 480px){
+        .Film-section .Film-section-Rigth {
+                right: 30%;
         }
 }
 @media screen and (max-width: 510px){

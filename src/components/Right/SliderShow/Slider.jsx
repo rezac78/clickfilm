@@ -7,7 +7,7 @@ export default function Slider() {
                         <Swiper
                                 direction={"vertical"}
                                 autoplay={{
-                                        delay: 2500,
+                                        delay: 250000,
                                         disableOnInteraction: false,
                                 }}
                                 
@@ -20,7 +20,7 @@ export default function Slider() {
                                 <SwiperSlide className="BigSliderShow2">
                                         <div className="title" >
                                                 <span className="text-center"><big>MARVEL</big> برترین اثار </span>
-                                                <Image width={1000} height={1200} src="/img/home/left/film1/poster/1.jpg" alt="" />
+                                                <Image width={900} height={100} src="/img/home/left/film1/poster/1.jpg" alt="" />
                                         </div>
                                 </SwiperSlide>
                                 <SwiperSlide className="BigSliderShow2">

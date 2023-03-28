@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Headers from "../components/Header/header"
 import Meta from '@/components/MetaTitle/Meta';
 import Footer from '@/components/Footer/Footer';
+import Link from 'next/link'
 export default function Download() {
         const [isActive, setIsActive] = useState(false);
         const [isActive2, setIsActive2] = useState(false);
@@ -21,7 +22,7 @@ export default function Download() {
                         <div style={{ "background": "#111111" }}>
                                 <Headers />
                                 <section >
-                                        <div className="class">
+                                        <div className="classContainer">
                                                 <main >
                                                         <div className="container">
                                                                 <div className="main">
@@ -89,13 +90,13 @@ export default function Download() {
                                                                                                                         <i className="fas fa-cloud-download-alt"><span>کیفیت : <big>BluRay 1080p</big>== <small>انگورد :<span>RARBG</span>==</small><span>حجم : <span> 2.07 GB</span></span></span></i>
                                                                                                                 </div>
                                                                                                                 <div className="buttom-link">
-                                                                                                                        <a href=""><button>کلیک کنید</button></a>
+                                                                                                                        <Link href="#"><button>کلیک کنید</button></Link>
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </div>
                                                                                         </div>
                                                                                         <div className="container mt-4">
-                                                                                                <div style={{ "backgroundColor": "#E74D3D", "color": "white;" }} className="user-info2">
+                                                                                                <div style={{ "backgroundColor": "#E74D3D" , "color":"white"}} className="user-info2">
                                                                                                         <div className="img-name">
                                                                                                                 <i onClick={handleClick2} className={`fas fa-chevron-${isActive2 ? "up" : "down"}`}></i>
                                                                                                                 <span style={{ "fontWeight": "bold"}}>لینک های دانلود دوبله</span>
@@ -105,7 +106,7 @@ export default function Download() {
                                                                                                                         <i className="fas fa-cloud-download-alt"><span>کیفیت : <big>BluRay 1080p</big>== <small>انگورد :<span>RARBG</span>==</small><span>حجم : <span> 2.07 GB</span></span></span></i>
                                                                                                                 </div>
                                                                                                                 <div className="buttom-link">
-                                                                                                                        <a href=""><button>کلیک کنید</button></a>
+                                                                                                                        <Link href="#"><button>کلیک کنید</button></Link>
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </div>

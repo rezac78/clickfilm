@@ -5,7 +5,11 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                 <>
                         <div className="Film-section">
                                 <div className="Film-section-Rigth">
-                                        <Link href="/Download"><Image width={600} height={100} src={img} alt="poster-Film" /></Link>
+                                        <Link href="/Download">
+                                                <div className="ImageBg">
+                                                        <Image width={800} height={350} src={img} alt="poster-Film" />
+                                                </div>
+                                        </Link>
                                 </div>
                                 <div className="Film-section-Left">
                                         <div className="Film-section-headeTitle">
@@ -13,7 +17,7 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                                                         <Link href="/Download"><span>دانلود فیلم {name}</span></Link>
                                                 </div>
                                                 <div className="Film-section-IMDB">
-                                                        <div className="Film-section-IMDB-icon"><i class="fas fa-star"><span>{score} <small>/10</small></span></i></div>
+                                                        <div className="Film-section-IMDB-icon"><i className="fas fa-star"><span>{score} <small>/10</small></span></i></div>
                                                         <div className="Film-section-IMDB-IMDB"><span>IMDB</span></div>
                                                 </div>
                                         </div>

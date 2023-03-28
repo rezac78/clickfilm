@@ -1,7 +1,7 @@
 .card-cantainer{
         display: flex;
         flex-wrap: wrap;
-        background-color: black;
+        background-color: var(--backgroundPart);
 }
 .card{
         position: relative;

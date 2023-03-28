@@ -1,9 +1,6 @@
 .CardSerial a{
         text-decoration: none;
-        color: black;
-}
-.CardSerial a:hover{
-        color: black;
+        color: var(--ColorPartTitleSubSPAN);
 }
 .PartCard{
         width: 100%;
@@ -24,7 +21,7 @@
         height: 70%;
 }
 .CardSerial p {
-        color: black;
+        color: var(--ColorPartTitleSubSPAN);
         font-weight: bold;
         padding: 1% 15px;
         text-align: center;
@@ -34,13 +31,13 @@
         justify-content: space-between;
         padding: 1% 1%;
         background-color: #363739;
-        color: white;
+        color: var(--Colorbackground);
 }
 .CardSerial .imgcaver .star{
         color: gold;
 }
 .CardSerial .imgcaver .star span{
-        color: white;
+        color: var(--Colorbackground);
         padding: 0px 7px;
 }
 .CardSerial .cardtitle{
@@ -59,38 +56,6 @@
         justify-content: space-between;
         cursor: pointer;
 }
-.serialpart a{
-        color: #00D4AD;
-        font-size: 0.85rem;
-        text-decoration: none;
-}
-.serialpart2{
-        position: relative;
-        top: -1.5pc;
-        display: flex;
-        justify-content: space-between;
-        color: #00D4AD;
-        font-size: 0.85rem;
-        cursor: pointer;
-}
-.list ul li span{
-        color: #00D4AD;
-}
-.list ul li a{
-        text-decoration: none;
-}
-.list ul li{
-        font-size: 1rem;
-}
-.class{
-        margin: 0 1%;
-        background-color: #111111;
-}
-/* part 2 start */
-
-
-
-/* part 2 end */
 /* main end */
 
 @media screen and (max-width: 1400px){

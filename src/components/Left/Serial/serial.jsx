@@ -8,8 +8,8 @@ export default function Serial({ ImageCover, Name, PartSerial }) {
                         </div>
                         <div className="">
                                 <div className="serialpart">
-                                        <a href=""><div className="right2"><span>{Name}</span></div></a>
-                                        <a href=""><div className="left2"><span>{PartSerial}</span></div></a>
+                                        <Link href="#"><div className="right2"><span>{Name}</span></div></Link>
+                                        <Link href="#"><div className="left2"><span>{PartSerial}</span></div></Link>
                                 </div>
                         </div>
                 </>

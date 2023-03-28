@@ -10,7 +10,7 @@ export default function Trailer() {
 
                         <div className="trailerSection mt-3">
                                 <Link href=""><Image width={700} height={300} src="/img/home/left/film1/3.jpg" alt="" /></Link>
-                                <div className="">
+                                <div>
                                         <div className="serialpart2">
                                                 <div className="right3"><span>the walking ded</span></div>
                                                 <div className="left3"><span>تریلر فصل 1 سریال</span></div>

@@ -108,8 +108,8 @@
 }
 .main{
         margin-top: 52px;
-        background-color: #20242C;
-        color: #08FFFF;
+        background-color: var(--backgroundPart);
+        color: var(--Colorbackground);
 }
 .Main-Download{
         direction: rtl;
@@ -136,7 +136,7 @@
         padding: 0px 4px;
 }
 .IMDB-part small{
-        color: #08FFFF;
+        color: var(--Colorbackground);
         font-size: 1em;
         padding: 0px 4px;
 }
@@ -162,7 +162,7 @@
         padding: 0px 7px;
 }
 .country-part span:hover{
-        color: #03a2be;
+        color: var(--Colorbackground);
         transition: 0.6s;
 }
 .pay-part i{
@@ -186,17 +186,17 @@
         padding: 10px 18px;
 }
 .max-part span{
-        color: #08FFFF;
+        color: var(--Colorbackground);
 }
 .max-part big:hover{
-        color: #03a2be;
+        color: var(--Colorbackground);
         transition: 0.6s;
 }
 .max-part big{
         color: white;
 }
 .matn-part span{
-        color: #08FFFF;
+        color: var(--Colorbackground);
         font-size: 1.3em;
 }
 .matn-part p{
@@ -208,7 +208,7 @@
         font-size: 1.2em;
 }
 .number-part small{
-        color: #08FFFF;
+        color: var(--Colorbackground);
         font-size: 1em;
 }
 .number-part big{
@@ -293,8 +293,6 @@
         font-weight: bold;
 }
 .user-info2{
-        background-color: #282C33;
-        color: #04EEC8;
         height: 100%;
         padding: 20px 10px;
         width: 100%;
@@ -307,14 +305,6 @@
         display: none;
         padding: 5px 10px;
         text-align: center;
-}
-
-.user-info3{
-        background-color: #282C33;
-        color: #04EEC8;
-        height: 100%;
-        padding: 20px 10px;
-        width: 100%;
 }
 .img-name3{
         display: flex;
