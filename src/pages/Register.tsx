@@ -28,7 +28,7 @@ export default function Register() {
                                                         <div className="modal-buttons">
                                                                 <button className="input-button">Register</button>
                                                         </div>
-                                                        <p className="sign-up">Already Member? <a href="/Login">Login</a></p>
+                                                        <p className="sign-up">Already Member? <Link href="/Login">Login</Link></p>
                                                 </div>
                                         </div>
                                 </div>
