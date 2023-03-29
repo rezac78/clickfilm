@@ -21,7 +21,7 @@ export default function Login() {
                                                                 <Link href="/">Forgot your password?</Link>
                                                                 <button className="input-button">Login</button>
                                                         </div>
-                                                        <p className="sign-up">Don&lsquo;t have an account? <a href="/Register">Sign up now</a></p>
+                                                        <p className="sign-up">Don&lsquo;t have an account? <Link href="/Register">Sign up now</Link></p>
                                                 </div>
                                         </div>
                                 </div>
