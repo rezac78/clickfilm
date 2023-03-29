@@ -5,6 +5,7 @@ import Script from "next/script";
 import "../components/Header/header.css";
 import "../styles/Netflex.css";
 import "../styles/globals.css";
+import "../styles/Login.css";
 import "../styles/Film.css";
 import "../components/Footer/Footer.css";
 import "../styles/download.css";
@@ -34,6 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
         crossOrigin="anonymous"
       />
       <Script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" />
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js" />
       <Component {...pageProps} />
     </>
   );

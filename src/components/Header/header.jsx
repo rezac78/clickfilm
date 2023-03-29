@@ -99,7 +99,7 @@ export default function Header() {
                                         <li><Link href="/">خانه</Link></li>
                                         <li><Link href="/Serial">سریال</Link></li>
                                         <li><Link href="/Film">فیلم</Link></li>
-                                        <li><Link href="/users/register">ورود / ثبت نام</Link></li>
+                                        <li><Link href="/Login">ورود</Link></li>
                                 </ul>
                         </section>
                 </>
