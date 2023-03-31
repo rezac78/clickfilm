@@ -14,6 +14,7 @@ import "../components/Main/Main.css";
 import "../components/Right/Serial/Serial.css";
 import "bootstrap/dist/css/bootstrap.css";
 import '../components/Left/NewSection/Swiper.css';
+import "react-toastify/dist/ReactToastify.css";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>

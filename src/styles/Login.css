@@ -87,7 +87,7 @@
 }
 .modal-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 }
 .modal-buttons a {
@@ -115,6 +115,24 @@
   transition: 0.3s;
   cursor: pointer;
 }
+.error{
+  text-align: center;
+  font-size: 12px;
+  margin: -15px 0 0px 0;
+  color: red;
+  letter-spacing: .1rem; 
+}
+.input-buttonClick {
+  padding: 8px 12px;
+  outline: none;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  background: darkgray;
+  font-family: "Nunito", sans-serif;
+  transition: 0.3s;
+  cursor: wait !important;
+}
 .input-button:hover {
   background: #55311c;
 }
@@ -137,6 +155,7 @@
   border-radius: 4px;
   margin-bottom: 20px;
   transition: 0.3s;
+  direction: rtl;
 }
 .input-block input {
   outline: 0;
