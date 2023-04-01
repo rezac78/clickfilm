@@ -18,6 +18,26 @@
   background: #fff;
   transform: translateY(100px) scale(0.4);
 }
+.modal-container-ChangePassword {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  top:25pc;
+  margin:auto;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: 0.3s;
+  background: #fff;
+  transform: translateY(100px) scale(0.4);
+}
+.FormChangePassword{
+  display: flex;
+  width: 100%;
+  margin-top: 10%;
+}
 .modal-container-Req{
   display: flex;
   max-width: 500px;
@@ -45,6 +65,14 @@
 }
 .modal-left {
   padding: 60px 30px 20px;
+  background: #fff;
+  flex: 1.5;
+  transition-duration: 0.5s;
+  transform: translateY(80px);
+  opacity: 0;
+}
+.modal-FormChangePassword {
+  padding: 20px 30px 20px;
   background: #fff;
   flex: 1.5;
   transition-duration: 0.5s;
@@ -80,10 +108,36 @@
   pointer-events: auto;
   transform: translateY(0) scale(1);
 }
+.modalis-open .modal-container-ChangePassword {
+  opacity: 1;
+  transition-duration: 0.6s;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
 .modalis-open .modal-left {
   transform: translateY(0);
   opacity: 1;
   transition-delay: 0.1s;
+}
+.modalis-open .modal-FormChangePassword {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+.modal-buttonsLogin{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-buttonsChangePass{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+.modal-buttonsLogin a {
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 14px;
 }
 .modal-buttons {
   display: flex;
@@ -183,6 +237,44 @@
   color: rgba(140, 117, 105, 0.8);
 }
 
+.input-blockChangePass {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  direction: rtl;
+  width: 80%;
+}
+.input-blockChangePass input {
+  outline: 0;
+  border: 0;
+  padding: 4px 0 0;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+.input-blockChangePass input::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.input-blockChangePass input:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.input-blockChangePass input::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.input-blockChangePass:focus-within {
+  border-color: #8c7569;
+}
+.input-blockChangePass:focus-within .input-label {
+  color: rgba(140, 117, 105, 0.8);
+}
+
+
 .icon-button {
   outline: 0;
   position: absolute;
@@ -226,10 +318,16 @@
     max-width: 500px;
 
   }
+  .modal-container-ChangePassword {
+    max-width: 500px;
+  }
 }
 @media screen and (max-height: 700px){
   .modal-container {
     top:7pc;
+  }
+  .modal-container-ChangePassword {
+    top:18pc;
   }
 }
 @media screen and (max-height: 780px){
@@ -244,4 +342,18 @@
   .modal-container-Req {
     width: 90%;
   }
+  .modal-container-ChangePassword {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 430px){
+  .input-blockChangePass {
+    width: 100%;
+  }
+.modal-buttonsChangePass {
+  width: 100%;
+}
+.modal-FormChangePassword {
+  padding: 20px 9px 20px;
+}
 }

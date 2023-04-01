@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import { useFormik } from "formik";
 import Meta from '@/components/MetaTitle/Meta'
 import Link from 'next/link';
@@ -6,7 +7,8 @@ import api from "../pages/api/api"
 import { ToastContainer, toast } from 'react-toastify';
 import { FormRegisterSchema } from "../schemas/index"
 export default function Register() {
-        const [inputVal, setInputVal] = useState(false)
+        const [inputVal, setInputVal] = useState(false);
+        const router = useRouter();
         const onSubmit = (e: any, actions: any) => {
                 setInputVal(true);
                 api.post("/signup", e).then((result) => {
@@ -33,13 +35,14 @@ export default function Register() {
                                 setInputVal(false);
                         }
                         else {
-                                toast.success("ارسال شد 👍", {
+                                toast.success("ثبت نام موفق امیز بود 👍", {
                                         position: "top-right",
                                         closeButton: true,
                                         closeOnClick: true,
                                 });
                                 setInputVal(false);
                                 actions.resetForm();
+                                router.push("/Login");
                         }
                 }, (error) => {
                         toast.error(` Eror❗️❗️❗️`, {
