@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
-export default function Film({ img, name, score, type, Quality, ProductCountry, Director, Actors, summary, score2 }) {
+export default function Film({ img, name, type, Quality, ProductCountry, Director, Actors, summary }) {
+        const myLoader = ({ src }) => {
+                return img;
+        }
         return (
                 <>
                         <div className="Film-section">
                                 <div className="Film-section-Rigth">
                                         <Link href="/Download">
                                                 <div className="ImageBg">
-                                                        <Image width={800} height={350} src={img} alt="poster-Film" />
+                                                        <Image loader={myLoader} src={img} width={800} height={350} alt="poster-Film" />
                                                 </div>
                                         </Link>
                                 </div>
@@ -17,7 +20,7 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                                                         <Link href="/Download"><span>دانلود فیلم {name}</span></Link>
                                                 </div>
                                                 <div className="Film-section-IMDB">
-                                                        <div className="Film-section-IMDB-icon"><i className="fas fa-star"><span>{score} <small>/10</small></span></i></div>
+                                                        <div className="Film-section-IMDB-icon"><i className="fas fa-star"><span>8.7 <small>/10</small></span></i></div>
                                                         <div className="Film-section-IMDB-IMDB"><span>IMDB</span></div>
                                                 </div>
                                         </div>
@@ -26,7 +29,7 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                                                         <ul>
                                                                 <li>
                                                                         <span className="Film-section-TitleFilm-genre"><i className="far fa-folder"></i>ژانر :</span>
-                                                                        <span className="Film-section-TitleFilm-type">{type}</span>
+                                                                        <span className="Film-section-TitleFilm-type">{type.join(' |')}</span>
                                                                 </li>
                                                                 <li>
                                                                         <span className="Film-section-TitleFilm-genre"><i className="fas fa-tv"></i>کیفیت :</span>
@@ -42,7 +45,7 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                                                                 </li>
                                                                 <li>
                                                                         <span className="Film-section-TitleFilm-genre"><i className="fas fa-user-friends"></i>بازیگران :</span>
-                                                                        <span className="">{Actors}</span>
+                                                                        <span className="">{Actors.join(', ')}</span>
                                                                 </li>
                                                                 <li>
                                                                         <div className="Film-section-TitleFilm-genre"><span className=""><i className="fas fa-stream"></i>خلاصه داستان :</span></div>
@@ -50,7 +53,7 @@ export default function Film({ img, name, score, type, Quality, ProductCountry, 
                                                         </ul>
                                                 </div>
                                                 <div className="Film-section-score">
-                                                        <span>میزان آرا : <big>{score2}</big></span>
+                                                        <span>میزان آرا : <big>274</big></span>
                                                 </div>
                                         </div>
                                         <div className="Film-section-summary">

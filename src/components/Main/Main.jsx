@@ -10,7 +10,7 @@ import Search from '../Right/Search/Search';
 import Film from '../Right/Film/Film';
 import { FilmValues } from "../../events/events"
 import SubTitle from '../SubTitle/subTitle';
-export default function Main() {
+export default function Main({ FilmPart }) {
         const router = useRouter();
         return (
                 <>
@@ -25,7 +25,7 @@ export default function Main() {
                                                                                 <NewSection />
                                                                                 <Serial />
                                                                                 <TrailerPart />
-                                                                                <Grouping />
+                                                                                <Grouping FilmPart={FilmPart} />
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -46,8 +46,8 @@ export default function Main() {
                                                                 {
                                                                         router.route == "/Serial" ? <SerialPart />
                                                                                 :
-                                                                                FilmValues.map((e) => {
-                                                                                        return <Film key={e.id} img={e.image} name={e.name} score={e.score} type={e.type} Quality={e.Quality} ProductCountry={e.ProductCountry} Director={e.Director} Actors={e.Actors} summary={e.summary} score2={e.score2} />
+                                                                                FilmPart.map((e) => {
+                                                                                        return <Film key={e.id} img={e.cover.url} name={e.tiTleFilm} type={e.tags} Director={e.director} Actors={e.actors} summary={e.description} Video={e.mp4.url} />
                                                                                 })
                                                                 }
                                                         </div>

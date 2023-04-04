@@ -1,27 +1,24 @@
-import { useState } from 'react';
-import Headers from "../components/Header/header"
 import Meta from '@/components/MetaTitle/Meta';
-import Footer from '@/components/Footer/Footer';
-import Link from 'next/link'
+import Image from 'next/image';
 export default function Download() {
-        const [isActive, setIsActive] = useState(false);
-        const [isActive2, setIsActive2] = useState(false);
-        const [isActive3, setIsActive3] = useState(false);
-        const handleClick = () => {
-                setIsActive(!isActive);
-        };
-        const handleClick2 = () => {
-                setIsActive2(!isActive2);
-        };
-        const handleClick3 = () => {
-                setIsActive3(!isActive3);
-        };
+        const myLoader = ({ src }) => {
+                return img;
+        }
         return (
                 <>
                         <Meta NameTitle="Download" linkTitle="Home" />
                         <div style={{ "background": "#111111" }}>
-                                <Headers />
-                                <section >
+                                <div className="">
+                                        <div className="video">
+                                                <div className="clipDown ">
+                                                        <Image loader={myLoader} src={img} width={800} height={350} alt="poster-Film" />
+                                                </div>
+                                                <div className="sphere">
+                                                        <video loop muted autoPlay >
+                                                                <source type="video/webm" src="/video/4.mp4" />
+                                                        </video>
+                                                </div>
+                                        </div>
                                         <div className="classContainer">
                                                 <main >
                                                         <div className="container">
@@ -29,7 +26,7 @@ export default function Download() {
                                                                         <div className="Main-Download">
                                                                                 <div className="part1">
                                                                                         <div className="name-part">
-                                                                                                <span>دانلود فیلم Fear of Rain 2021</span>
+                                                                                                <span>دانلود فیلم {name}</span>
                                                                                         </div>
                                                                                         <div className="collaction-part">
                                                                                                 <span>ترسناک|درام|هیجان انگیز</span>
@@ -74,52 +71,12 @@ export default function Download() {
                                                                                         </div>
                                                                                 </div>
                                                                         </div>
-                                                                        <div className="part4">
-                                                                                <div className="link">
-                                                                                        <span>لینک های دانلود</span>
-                                                                                </div>
-                                                                                <div className="part-link">
-                                                                                        <div className="container mt-4">
-                                                                                                <div className="user-info">
-                                                                                                        <div className="img-name">
-                                                                                                                <i onClick={handleClick} className={`fas fa-chevron-${isActive ? "up" : "down"}`}></i>
-                                                                                                                <span style={{ "fontWeight": "bold"}}>لینک های دانلود زبان اصلی</span>
-                                                                                                        </div>
-                                                                                                        <div className={isActive ? "DownloadDetails" : "DownloadDetailsOff"}>
-                                                                                                                <div className="main-link text-center">
-                                                                                                                        <i className="fas fa-cloud-download-alt"><span>کیفیت : <big>BluRay 1080p</big>== <small>انگورد :<span>RARBG</span>==</small><span>حجم : <span> 2.07 GB</span></span></span></i>
-                                                                                                                </div>
-                                                                                                                <div className="buttom-link">
-                                                                                                                        <Link href="#"><button>کلیک کنید</button></Link>
-                                                                                                                </div>
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                        </div>
-                                                                                        <div className="container mt-4">
-                                                                                                <div style={{ "backgroundColor": "#E74D3D" , "color":"white"}} className="user-info2">
-                                                                                                        <div className="img-name">
-                                                                                                                <i onClick={handleClick2} className={`fas fa-chevron-${isActive2 ? "up" : "down"}`}></i>
-                                                                                                                <span style={{ "fontWeight": "bold"}}>لینک های دانلود دوبله</span>
-                                                                                                        </div>
-                                                                                                        <div className={isActive2 ? "DownloadDetails" : "DownloadDetailsOff"}>
-                                                                                                                <div className="main-link text-center">
-                                                                                                                        <i className="fas fa-cloud-download-alt"><span>کیفیت : <big>BluRay 1080p</big>== <small>انگورد :<span>RARBG</span>==</small><span>حجم : <span> 2.07 GB</span></span></span></i>
-                                                                                                                </div>
-                                                                                                                <div className="buttom-link">
-                                                                                                                        <Link href="#"><button>کلیک کنید</button></Link>
-                                                                                                                </div>
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                        </div>
-                                                                                </div>
-                                                                        </div>
                                                                 </div>
                                                         </div>
                                                 </main>
                                         </div>
-                                </section>
+                                </div>
                         </div>
-                        <Footer />
                 </>
         )
 }
