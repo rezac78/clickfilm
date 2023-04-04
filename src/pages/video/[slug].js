@@ -159,9 +159,11 @@ export default function Video({ fIlms }) {
                             </span>
                           </div>
                           <div className="BannerTrailer">
-                            <Link href="#" onClick={handleClick}>
-                              تماشا
-                            </Link>
+                            <div className="BannerTrailer-Button">
+                              <Link href="#" onClick={handleClick}>
+                                تماشا
+                              </Link>
+                            </div>
                             <div
                               className={`trailer ${isActive ? "active" : ""}`}
                             >

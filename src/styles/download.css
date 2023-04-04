@@ -320,6 +320,14 @@
 }
 /* part 2 end */
 /* main end */
+
+@media screen and (max-width:1300px)
+{
+        .classContainerDown{
+                position: relative;
+                margin: 38% 0 0 0;
+        }
+}
 @media screen and (max-width:1200px)
 {
         .DownloadDetails{
@@ -365,6 +373,12 @@
         }
         .DownloadDetails{
                 font-size: 0.6rem;
+        }
+}
+@media screen and (max-width: 650px){
+        .classContainerDown{
+                position: relative;
+                margin: 75% 0 0 0;
         }
 }
 @media screen and (min-width: 60px) and (max-width: 530px){

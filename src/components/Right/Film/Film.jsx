@@ -8,7 +8,7 @@ export default function Film({ img, name, type, Quality, ProductCountry, Directo
                 <>
                         <div className="Film-section">
                                 <div className="Film-section-Rigth">
-                                        <Link href={"/video/" + URL}>
+                                        <Link href={`video/${URL}`}>
                                                 <div className="ImageBg">
                                                         <Image loader={myLoader} src={imgPhone} width={800} height={350} alt="poster-Film" />
                                                 </div>

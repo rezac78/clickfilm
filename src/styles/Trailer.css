@@ -8,6 +8,17 @@
         flex-wrap: wrap;
         justify-content:space-around;
 }
+.BannerTrailer-Button a{
+        position: relative;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.502);
+        color: var(--Colorbackground);
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-decoration: none;
+        display: inline-block;
+        padding: 7px 10px;
+}
 .PartBannerTrailer .BannerTrailer{
         width: 30%;
         height: 100%;
