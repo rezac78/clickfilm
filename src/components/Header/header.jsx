@@ -78,17 +78,7 @@ export default function Header() {
                                                                                                         <div className="clip clip8"></div>
                                                                                                         <div className="clip clip9"></div>
                                                                                                         <div className="clip clip10"></div>
-                                                                                                </div> :
-                                                                                                router.route == "/Download" ?
-                                                                                                        <div className="video">
-                                                                                                                <div className="clipDown clip16"></div>
-                                                                                                                <div className="sphere">
-                                                                                                                        <video loop muted autoPlay >
-                                                                                                                                <source type="video/webm" src="/video/4.mp4" />
-                                                                                                                        </video>
-                                                                                                                </div>
-                                                                                                        </div> :
-                                                                                                        null
+                                                                                                </div> : null
                                 }
                                 <ul className="sci">
                                         <li><Link href="/facebook"><Image width={80} height={80} src="/img/facebook.png" alt="facebook" /></Link></li>

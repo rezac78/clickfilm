@@ -1,8 +1,10 @@
 import Link from 'next/link'
-export default function GroupingBox({ Name, Number }) {
+export default function GroupingBox({ NumberTags }) {
         return (
                 <>
-                        <div className="GroupingOnce"><Link href="#">{Name}</Link><span>{Number}</span></div>
+                        {NumberTags.map(([key, value]) => {
+                                return <div key={key} className="GroupingOnce"><Link href="#">{key}</Link><span>{value}</span></div>
+                        })}
                 </>
         )
 }

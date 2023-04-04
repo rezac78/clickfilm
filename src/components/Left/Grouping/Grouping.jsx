@@ -1,7 +1,23 @@
 import GroupingBox from "../../Grouping/Grouping"
-import { GroupingValues, GroupingValues2 } from "../../../events/events"
 import SubTitle from '@/components/SubTitle/subTitle'
-export default function Grouping() {
+export default function Grouping({ FilmPart }) {
+        let CountPartFilm = 0;
+        let ArrayPartFilm = []
+        for (let i = 0; i < FilmPart.length; i++) {
+                if (FilmPart[i].tags.toString()) {
+                        let StringPartFilm = FilmPart[i].tags.toString();
+                        ArrayPartFilm.push(StringPartFilm)
+                        CountPartFilm++;
+                }
+        }
+        const ObjectPartFilm = ArrayPartFilm.join()
+        const ReplacePartFilm = ObjectPartFilm.replace(/,/g, " ");
+        const obj = {};
+
+        ReplacePartFilm.split(" ").forEach(function (el, i, arr) {
+                obj[el] = obj[el] ? ++obj[el] : 1;
+        });
+        const NumberTags = Object.entries(obj)
         return (
                 <>
                         <div className="mt-3">
@@ -10,16 +26,15 @@ export default function Grouping() {
                         <div className="Grouping">
                                 <div className="GroupingMain mt-4">
                                         {
-                                                GroupingValues.map((e) => {
-                                                        return <GroupingBox key={e.id} Name={e.name} Number={e.Number} />
-                                                })
+                                                <GroupingBox NumberTags={NumberTags} />
+
                                         }
                                 </div>
                         </div>
                         <div className="mt-3">
                                 <SubTitle NameTitle="دسته بندی سریال ها" />
                         </div>
-                        <div className="Grouping">
+                        {/* <div className="Grouping">
                                 <div className="GroupingMain mt-4">
                                         {
                                                 GroupingValues2.map((e) => {
@@ -27,7 +42,7 @@ export default function Grouping() {
                                                 })
                                         }
                                 </div>
-                        </div>
+                        </div> */}
                 </>
         )
 }
