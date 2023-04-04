@@ -29,6 +29,9 @@ export const getStaticProps = async () => {
         cover {
           url
         }
+        coverPhone {
+          url
+        }
       }
     }
   `;

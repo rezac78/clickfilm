@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
-export default function Film({ img, name, type, Quality, ProductCountry, Director, Actors, summary }) {
+export default function Film({ img, name, type, Quality, ProductCountry, Director, Actors, summary, imgPhone, URL }) {
         const myLoader = ({ src }) => {
-                return img;
+                return imgPhone;
         }
         return (
                 <>
                         <div className="Film-section">
                                 <div className="Film-section-Rigth">
-                                        <Link href="/Download">
+                                        <Link href={"/video/" + URL}>
                                                 <div className="ImageBg">
-                                                        <Image loader={myLoader} src={img} width={800} height={350} alt="poster-Film" />
+                                                        <Image loader={myLoader} src={imgPhone} width={800} height={350} alt="poster-Film" />
                                                 </div>
                                         </Link>
                                 </div>

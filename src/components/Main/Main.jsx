@@ -8,7 +8,6 @@ import Grouping from '../Left/Grouping/Grouping';
 import SliderShow from '../Right/SliderShow/Slider';
 import Search from '../Right/Search/Search';
 import Film from '../Right/Film/Film';
-import { FilmValues } from "../../events/events"
 import SubTitle from '../SubTitle/subTitle';
 export default function Main({ FilmPart }) {
         const router = useRouter();
@@ -47,7 +46,7 @@ export default function Main({ FilmPart }) {
                                                                         router.route == "/Serial" ? <SerialPart />
                                                                                 :
                                                                                 FilmPart.map((e) => {
-                                                                                        return <Film key={e.id} img={e.cover.url} name={e.tiTleFilm} type={e.tags} Director={e.director} Actors={e.actors} summary={e.description} Video={e.mp4.url} />
+                                                                                        return <Film key={e.id} URL={e.slug} img={e.cover.url} imgPhone={e.coverPhone.url} name={e.tiTleFilm} type={e.tags} Director={e.director} Actors={e.actors} summary={e.description} Video={e.mp4.url} />
                                                                                 })
                                                                 }
                                                         </div>

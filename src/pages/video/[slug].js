@@ -1,5 +1,5 @@
+import { useState, useEffect, useRef } from "react";
 import { GraphQLClient, gql } from "graphql-request";
-import { useState, useRef } from "react";
 import Meta from "@/components/MetaTitle/Meta";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,6 +31,9 @@ export const getServerSideProps = async (pageContext) => {
         cover {
           url
         }
+        coverPhone {
+          url
+        }
       }
     }
   `;
@@ -55,6 +58,12 @@ export default function Video({ fIlms }) {
     Video.pause();
     Video.currentTime = 0;
   };
+  const [mobailSize, setMobailSize] = useState();
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setMobailSize(window.innerWidth);
+    });
+  }, []);
   return (
     <>
       <Meta NameTitle="Download" linkTitle="Home" />
@@ -63,13 +72,16 @@ export default function Video({ fIlms }) {
           const myLoader = ({ src }) => {
             return e.cover.url;
           };
+          const myLoaderPhone = ({ src }) => {
+            return e.coverPhone.url;
+          };
           return (
             <div className="" key={e.id}>
               <div className="video">
                 <div className="clipDown">
                   <Image
-                    loader={myLoader}
-                    src={e.cover.url}
+                    loader={mobailSize < 650 ? myLoaderPhone : myLoader}
+                    src={mobailSize < 650 ? e.cover.url : e.coverPhone.url}
                     width={1400}
                     height={450}
                     alt="poster-Film"
@@ -91,7 +103,7 @@ export default function Video({ fIlms }) {
                             <span>دانلود فیلم {e.tiTleFilm}</span>
                           </div>
                           <div className="collaction-part">
-                            <span>{e.tags.join(' |')}</span>
+                            <span>{e.tags.join(" |")}</span>
                           </div>
                         </div>
                         <div className="part2">
@@ -129,7 +141,7 @@ export default function Video({ fIlms }) {
                               کارگردان : <big>{e.director}</big>
                             </span>
                             <span>
-                              بازیگران : <big>{ e.actors.join(' ,')}</big>
+                              بازیگران : <big>{e.actors.join(" ,")}</big>
                             </span>
                           </div>
                         </div>
