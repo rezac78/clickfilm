@@ -9,7 +9,7 @@ import SliderShow from '../Right/SliderShow/Slider';
 import Search from '../Right/Search/Search';
 import Film from '../Right/Film/Film';
 import SubTitle from '../SubTitle/subTitle';
-export default function Main({ FilmPart }) {
+export default function Main({ FilmPart, PartSerial }) {
         const router = useRouter();
         return (
                 <>
@@ -24,7 +24,7 @@ export default function Main({ FilmPart }) {
                                                                                 <NewSection />
                                                                                 <Serial />
                                                                                 <TrailerPart />
-                                                                                <Grouping FilmPart={FilmPart} />
+                                                                                <Grouping FilmPart={FilmPart} PartSerial={PartSerial} />
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -43,7 +43,7 @@ export default function Main({ FilmPart }) {
                                                                         </div>
                                                                 }
                                                                 {
-                                                                        router.route == "/Serial" ? <SerialPart />
+                                                                        router.route == "/Serial" ? <SerialPart PartSerial={PartSerial} />
                                                                                 :
                                                                                 FilmPart.map((e) => {
                                                                                         return <Film key={e.id} URL={e.slug} img={e.cover.url} imgPhone={e.coverPhone.url} name={e.tiTleFilm} type={e.tags} Director={e.director} Actors={e.actors} summary={e.description} Video={e.mp4.url} />
