@@ -1,6 +1,6 @@
 import { GraphQLClient, gql } from "graphql-request";
 import Meta from "@/components/MetaTitle/Meta";
-import Film from "../pageShow/Film.jsx";
+import PartSerial from "../pageShow/Serial.jsx";
 export const getServerSideProps = async (pageContext) => {
   const url =
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clfze5ufq6z0t01ui0x1zan9t/master";
@@ -12,17 +12,21 @@ export const getServerSideProps = async (pageContext) => {
   });
 
   const pageSlug = pageContext.query.slug;
-  const query1 = gql`
+  const query2 = gql`
     query ($pageSlug: String!) {
-      fIlms(where: { slug: $pageSlug }) {
+      serials (where: { slug: $pageSlug }) {
         createdAt
         id
-        tiTleFilm
+        title
         description
         slug
         tags
         director
         actors
+        format
+        number
+        episode
+        network
         mp4 {
           url
         }
@@ -38,28 +42,28 @@ export const getServerSideProps = async (pageContext) => {
   const variables = {
     pageSlug,
   };
-  const data = await graphQLClient.request(query1, variables);
-  const fIlms = data.fIlms;
+  const data2 = await graphQLClient.request(query2, variables);
+  const Serial = data2.serials;
   return {
     props: {
-      fIlms,
+      Serial,
     },
   };
 };
 
-export default function Video({ fIlms }) {
+export default function Serial({ Serial }) {
   return (
     <>
       <Meta NameTitle="Download" linkTitle="Home" />
       <div style={{ background: "#111111" }}>
-        {fIlms.map((e) => {
+        {Serial.map((e) => {
           return (
-            <Film
+            <PartSerial
               key={e.id}
               cover={e.cover.url}
               CoverPhone={e.coverPhone.url}
               MP4={e.mp4.url}
-              Title={e.tiTleFilm}
+              Title={e.title}
               Tags={e.tags}
               Director={e.director}
               Actors={e.actors}
