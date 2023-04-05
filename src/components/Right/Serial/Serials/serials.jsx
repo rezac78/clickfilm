@@ -1,17 +1,20 @@
 import Image from 'next/image'
 import Link from 'next/link'
-export default function Serials({ Network, poster, name, Quality, Score, summary, partSerial, type }) {
+export default function Serials({ Network, Episode, poster, Number, name, Quality, summary, type, Slug }) {
+        const myLoader = ({ src }) => {
+                return poster;
+        }
         return (
                 <>
                         <div className="CartSerialAll">
-                                <Link href="/Download">
+                                <Link href={`Serial/${Slug}`}>
                                         <div className="overCover">
-                                                <Image width={485} height={300} src={poster} alt="" />
+                                                <Image loader={myLoader} width={485} height={300} src={poster} alt="" />
                                                 <p>{summary}</p>
                                         </div>
                                         <div className="imgcaver">
-                                                <div className="star"><i className="fas fa-star"><span>{Score} <small>/10</small></span></i></div>
-                                                <div className="imagtitle"><span>{partSerial}</span></div>
+                                                <div className="star"><i className="fas fa-star"><span>{8.7} <small>/10</small></span></i></div>
+                                                <div className="imagtitle"><span>فصل {Number}  قسمت {Episode} </span></div>
                                         </div>
                                         <div className="cardtitle">
                                                 <div className="nameserial">
@@ -23,7 +26,7 @@ export default function Serials({ Network, poster, name, Quality, Score, summary
                                         </div>
                                         <div className="cardtitle2">
                                                 <div className="nameserial3">
-                                                        <span>ژانر: {type}</span>
+                                                        <span>ژانر: {type.join(' |')}</span>
                                                 </div>
                                                 <div className="nameserial3">
                                                         <span>کیفیت : {Quality}</span>

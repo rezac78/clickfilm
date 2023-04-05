@@ -13,39 +13,72 @@ export const getStaticProps = async () => {
                 },
         });
         const query1 = gql`
-          query {
-            fIlms {
-              createdAt,
-              id,
-              tiTleFilm,
-              description,
-              slug,
-              tags,
-              director,
-              actors,
-              mp4{
-                url
-              }
-              cover {
-                url
-              }
+        query {
+          fIlms {
+            createdAt,
+            id,
+            tiTleFilm,
+            description,
+            slug,
+            tags,
+            director,
+            actors,
+            mp4{
+              url
+            }
+            cover {
+              url
+            }
+            coverPhone {
+              url
             }
           }
-        `;
+        }
+      `;
+        const query2 = gql`
+      query {
+        serials {
+          createdAt,
+         id,
+         title,
+         description,
+         slug,
+         tags,
+         director,
+         actors,
+         format,
+         number,
+         episode,
+         network,
+         mp4{
+           url
+         },
+         cover {
+           url
+         }
+             coverPhone {
+           url
+         }
+       }
+      }
+    `;
         const data: any = await graphQLClient.request(query1);
+        const data2: any = await graphQLClient.request(query2);
         const Film = data.fIlms
+        const Serial = data2.serials
         return {
                 props: {
-                        Film
+                        Film,
+                        Serial
                 }
         }
 }
-export default function Film({Film}) {
+export default function Film({ Serial, Film }) {
         return (
                 <>
                         <Meta NameTitle="Film" linkTitle="Home" />
                         <Header />
-                        <Main FilmPart={Film} />
+                        <Main FilmPart={Film} PartSerial={Serial} />
                         <Footer />
                 </>
         )

@@ -35,20 +35,50 @@ export const getStaticProps = async () => {
       }
     }
   `;
+  const query2 = gql`
+  query {
+    serials {
+      createdAt,
+     id,
+     title,
+     description,
+     slug,
+     tags,
+     director,
+     actors,
+     format,
+     number,
+     episode,
+     network,
+     mp4{
+       url
+     },
+     cover {
+       url
+     }
+         coverPhone {
+       url
+     }
+   }
+  }
+`;
   const data: any = await graphQLClient.request(query1);
+  const data2: any = await graphQLClient.request(query2);
   const Film = data.fIlms
+  const Serial = data2.serials
   return {
     props: {
-      Film
+      Film,
+      Serial
     }
   }
 }
-export default function Home({ Film }) {
+export default function Home({ Film, Serial }) {
   return (
     <>
       <Meta NameTitle="Click Film" linkTitle="Home" />
       <Headers />
-      <Main FilmPart={Film} />
+      <Main FilmPart={Film} PartSerial={Serial} />
       <Footer />
     </>
   )
