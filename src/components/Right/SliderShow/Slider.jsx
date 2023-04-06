@@ -7,7 +7,7 @@ export default function Slider() {
                         <Swiper
                                 direction={"vertical"}
                                 autoplay={{
-                                        delay: 250000,
+                                        delay: 2500,
                                         disableOnInteraction: false,
                                 }}
                                 
