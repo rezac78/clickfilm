@@ -73,12 +73,16 @@ export const getStaticProps = async () => {
     }
   }
 }
-export default function Home({ Film, Serial }) {
+interface PageProps {
+  Film: any;
+  Serial: any;
+}
+export default function Home(props: PageProps) {
   return (
     <>
       <Meta NameTitle="Click Film" linkTitle="Home" />
       <Headers />
-      <Main FilmPart={Film} PartSerial={Serial} />
+      <Main FilmPart={props.Film} PartSerial={props.Serial} />
       <Footer />
     </>
   )
