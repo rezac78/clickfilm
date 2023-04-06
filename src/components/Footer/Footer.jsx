@@ -1,6 +1,6 @@
 export default function Footer() {
         const DateNew = new Date()
-        const DateClickFilm = DateNew.toLocaleDateString().slice(5, 10)
+        const DateClickFilm = DateNew.toISOString().split('-')[0]
         return (
                 <>
                         <div className="Footer text-center">
