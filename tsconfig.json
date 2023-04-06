@@ -25,6 +25,6 @@
     "**/*.tsx",
     "src/components/Right/Serial/Serials.jsx",
     "src/pages/Download.tsx"
-, "src/pages/api/api.js", "src/pages/pageShow/Serial.jsx"  ],
+, "src/pages/api/api.js", "src/components/pageShow/Serial.jsx"  ],
   "exclude": ["node_modules"]
 }

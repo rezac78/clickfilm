@@ -1,6 +1,6 @@
 import { GraphQLClient, gql } from "graphql-request";
 import Meta from "@/components/MetaTitle/Meta";
-import PartSerial from "../pageShow/Serial.jsx";
+import PartSerial from "../../components/pageShow/Serial.jsx";
 export const getServerSideProps = async (pageContext) => {
   const url =
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clfze5ufq6z0t01ui0x1zan9t/master";
