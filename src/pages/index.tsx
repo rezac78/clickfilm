@@ -66,7 +66,6 @@ export const getStaticProps = async () => {
   const data2: any = await graphQLClient.request(query2);
   const Film = data.fIlms
   const Serial = data2.serials
-  console.log(data);
   return {
     props: {
       Film,
