@@ -2,6 +2,7 @@ import Headers from "../components/Header/header"
 import Footer from "../components/Footer/Footer"
 import Main from "../components/Main/Main"
 import Meta from '@/components/MetaTitle/Meta'
+import api from "../pages/api/api"
 import { GraphQLClient, gql } from "graphql-request";
 export const getStaticProps = async () => {
   const url =
@@ -66,6 +67,7 @@ export const getStaticProps = async () => {
   const data2: any = await graphQLClient.request(query2);
   const Film = data.fIlms
   const Serial = data2.serials
+  api.post("/Film", Film);
   return {
     props: {
       Film,
